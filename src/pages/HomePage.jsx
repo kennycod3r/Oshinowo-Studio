@@ -2,7 +2,6 @@ import React from "react";
 import Hero from "../components/hero/Hero";
 import Main from "../components/Main/Main";
 import Hero2 from "../components/hero2/Hero2";
-import Overview from "../components/overview/Overview";
 import CreamSection from "../components/CreamPress/CreamSection";
 import Wwd from "../components/wwd/Wwd";
 import HeroPress from "../components/Press/HeroPress";
@@ -22,7 +21,6 @@ const HomePage = () => {
       </div>
       <Hero2 />
       <CreamSection data={cardData} />
-      <Overview />
     </div>
   );
 };

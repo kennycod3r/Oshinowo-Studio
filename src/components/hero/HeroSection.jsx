@@ -4,7 +4,6 @@ import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 import is1 from "../../img/slide-img1.webp";
 import is2 from "../../img/slide-img3.webp";
-import is3 from "../../img/slide-img2.webp";
 import Arrow from "../assets/arrowDown.svg"; // Ensure the path is correct
 
 const slideImages = [
