@@ -1,0 +1,138 @@
+.cream {
+  background-color: #e5e0dc;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: var( --paddingMain);
+}
+
+.cream-card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  margin: 2em 0;
+  align-items: start;
+  overflow: hidden;
+  justify-items: end;
+  gap: 1.5em;
+}
+
+.cream-card-container li {
+  min-height: 100%;
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-grow: 1;
+    position: relative;
+}
+
+.cream-cardimg {
+  height: 200px;
+  width: 370px;
+  overflow: hidden;
+  object-fit: cover;
+  border-radius: 10px;
+  display: flex;
+  background-color: #1d2321;
+  color: var(--greycolor);
+}
+.cream-card-content h3 {
+  line-height: 2em;
+}
+
+.cream-card-content {
+  width: 370px;
+}
+
+.cream-card-container .cream-btn {
+  font-size: 12px;
+  background-color: #434d48ec !important;
+  margin-top: 10px;
+  transition:var(--animationSmooth);
+}
+
+.ash {
+  background-color: #d0c7be !important;
+  color: black !important;
+}
+
+.common-btn-style:hover {
+  background-color: #1d2321 !important;
+}
+
+@media (max-width: 580px) {
+  .cream {
+    padding: 4em 0;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    justify-content: center;
+  }
+
+  .job-title {
+    font-size: 13px;
+  }
+  .cream h2 {
+    text-align: center;
+  }
+  .cream-card-container {
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+  }
+  .cream-card-container li {
+    margin-bottom: 20px;
+  }
+
+  .cream-card-content {
+    width: 340px;
+  }
+
+  .cream-cardimg {
+    height: 100%;
+    width: 100%;
+    min-width: 100%;
+    background-color: var(--greycolor);
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .cream-cardimg,
+  .-tobooks {
+    height: 340px;
+    width: 340px;
+    min-width: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--greycolor);
+    object-fit: cover;
+
+    border-radius: 10px;
+  }
+
+  .cream-card-container li,
+  .-tobooks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .cream-card-content .-tobooks {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 700px) {
+  .cream {
+    padding: 4em 10px;
+  }
+  .cream-card-container {
+    gap: 1.5em;
+  }
+}

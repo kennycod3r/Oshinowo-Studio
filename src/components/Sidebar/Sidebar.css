@@ -1,0 +1,140 @@
+.main-sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  opacity: 0;
+  z-index: 97;
+  background-color: rgba(0, 0, 0, 0.329);
+  transition: transform 300ms ease-in-out, opacity 200ms ease-in-out;
+  pointer-events: none;
+  will-change: opacity, transform;
+}
+
+.main-sidebar.open {
+  transform: translateX(0);
+  opacity: 1;
+  pointer-events: all;
+}
+
+.inner-main-sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: rgb(208, 208, 208);
+  transition: all 300ms ease-in-out;
+  overflow: hidden;
+  z-index: 99;
+  box-shadow: var(--box-shadow-light);
+  background-color: #141517;
+  border-right: 1px solid #161d15;
+}
+
+.inner-main-sidebar ul {
+  margin-top: 5.8em;
+  margin-left: 1em;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+}
+
+.inner-main-sidebar ul li {
+  position: relative;
+}
+
+.close-btn-circle-sidebar {
+  min-height: 50px;
+  min-width: 50px;
+  border-radius: 50%;
+  border: none;
+  box-shadow: var(--box-shadow-light);
+  position: absolute;
+  will-change: transform;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  transition: all 200ms ease-in-out;
+  right: 10%;
+  top: 25px;
+  z-index: 98;
+  cursor: pointer;
+  backdrop-filter: blur(0.1em);
+  background-color: #2a2a2a;
+  justify-content: center;
+}
+
+.close-btn-circle-sidebar:hover {
+  transform: scale(1.1);
+}
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  justify-content: flex-start;
+  margin: 15px 0;
+  cursor: pointer;
+  transition: var(--animationSmooth);
+  transform: translateX(0);
+}
+
+.sidebar-link.active {
+  color: white;
+}
+
+.main-sidebar a:hover {
+  color: white;
+  transform: translateX(10px);
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: transparent;
+  transition: background-color 100ms ease;
+  margin-left: 20px;
+}
+
+.dot.active {
+  background-color: var(--color3);
+}
+
+.navigation-sidelink {
+  width: 100%;
+  color: #bdbdbd;
+  padding-bottom: 5px;
+}
+
+.semi-circle {
+  min-height: 200px;
+  border-top: 1px solid #575757;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 650px) {
+  .inner-main-sidebar {
+    width: 100%;
+  }
+
+  .inner-main-sidebar ul {
+    padding-top: 2em;
+  }
+
+  .inner-main-sidebar ul h3 {
+    font-size: 2.5em;
+  }
+}

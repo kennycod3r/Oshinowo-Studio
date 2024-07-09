@@ -1,0 +1,66 @@
+.ex-card-con {
+  border: none;
+  padding: 0.4em 1.8em;
+  font-size: 14px;
+  background-color: var(--background-grey);
+  cursor: pointer;
+  width: 100%;
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+  transition: var(--animationSmooth);
+}
+.card-content p {
+  color: white;
+}
+.project-btn{
+  border: none;
+  background-color:white;
+}
+.ex-card-con-image {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.ex-card-con:hover .ex-card-con-image {
+  transform: scale(1.05);
+}
+
+.card-content {
+  position: absolute;
+  margin-top: 0;
+  background-color: rgba(0, 0, 0, 0.205);
+  width: 100%;
+  height: 100%;
+  padding: 2em;
+  color: white;
+  transition: var(--animationSmooth);
+  min-height: 100%;
+  transform: translateY(100%);
+}
+
+.ex-card-con:hover .card-content {
+  transform: translateY(0);
+  z-index: 2;
+  top: 0;
+  left: 0;
+}
+.project-btn.active {
+  color: var(--color3);
+}
+
+.project-btn:hover {
+  color: var(--color3);
+}
+
+.project-category-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1em;
+}

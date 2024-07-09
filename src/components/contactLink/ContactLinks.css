@@ -1,0 +1,12 @@
+.red{
+    line-height: 1.4px;
+}
+.flexlinks{
+    gap: 1em;
+    padding: 10px 0;
+}
+@media only screen and (max-width: 850px) {
+    .flexlinks{
+      flex-direction: column;
+    }
+}

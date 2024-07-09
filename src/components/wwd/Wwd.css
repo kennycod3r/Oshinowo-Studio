@@ -1,0 +1,137 @@
+.wwd {
+  min-height: 90vh;
+  padding: 1em;
+  background-color: #f9f9f9;
+  transition: all 0.8s ease-in-out;
+}
+
+.wwd-head-des {
+  padding-bottom: 2em;
+}
+
+.wwd-card {
+  width: 279px;
+  max-width: 279px;
+  height: 330px;
+  background-color: var(--color2);
+  opacity: 0;
+  overflow: hidden !important;
+  transform: translateY(250px);
+  will-change: scroll-position, opacity, transform;
+  transition: opacity 0.8s ease-out, transform 0.5s ease-out;
+}
+
+.wwd-img-con{
+  width: 300px;
+  height: 100%;
+  color: white;
+  background-image: url("https://images.unsplash.com/photo-1581784368651-8916092072cf?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bHV4dXJ5JTIwaW50ZXJpb3J8ZW58MHx8MHx8fDA%3D");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  will-change: contents, background-position, opacity;
+  transition: background-position-x 0.8s ease-out, opacity 0.8s ease-out,
+    transform 0.5s ease-out;
+}
+
+.wwd-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.wwd-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  overflow: hidden;
+}
+
+.wwd-container:hover .wwd-img-con {
+  background-position-x: -20px;
+  cursor: pointer;
+}
+
+.wwd-container {
+  gap: 2em;
+  position: relative;
+}
+
+.wwd-textbox,
+.wwd-textbox-small .fI1 {
+  opacity: 0;
+  transform: translateY(20px);
+  will-change: opacity, transform;
+  transition: all 0.5s ease-out;
+}
+
+.wwd-textbox.visible,
+.wwd-textbox-small .fI1.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.wwd-textbox {
+  padding: 4em;
+}
+
+.wwd-textbox-small {
+  padding: 4em 0;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.fI1 {
+  padding: 0 4em;
+}
+
+.fI1-header {
+  padding-bottom: 0.6em;
+  margin-bottom: 1em;
+  color: var(--greycolor);
+  border-bottom: 0.1px solid rgb(203, 203, 203);
+}
+
+@media (max-width: 768px) {
+  .wwd-container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .wwd-textbox {
+    padding: 4em 2em;
+  }
+
+  .wwd-textbox-small {
+    padding: 0;
+    display: block;
+  }
+
+  .fI1 {
+    padding: 2em;
+    border-top: var(--border-line);
+  }
+
+  .fI1-header {
+    border: none;
+  }
+
+  .wwd-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .headerh2 {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 800px) {
+  .wwd-container {
+    padding: 5px;
+  }
+
+  .wwd-row {
+    gap: 5px;
+  }
+}

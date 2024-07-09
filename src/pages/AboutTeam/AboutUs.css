@@ -1,0 +1,195 @@
+.au-hero {
+  padding-top: 4em;
+  width: 100%;
+  min-height: fit-content;
+  overflow: hidden !important;
+  background-color: var(--color1);
+}
+
+.au-hero-text {
+  position: absolute;
+  z-index: 2;
+  color: white;
+  width: 100%;
+  overflow: hidden;
+  bottom: 5em !important;
+  flex-direction: column;
+  left: 0;
+  text-align: center;
+}
+
+.au-hero-text p {
+  text-align: center;
+}
+
+.au-blacksection {
+  min-height: 100%;
+  width: 25%;
+  transition: var(--animationSmooth);
+  padding: 0 2em;
+  background-color: var(--color1);
+}
+
+.au-blacksection p {
+  color: #efefef;
+}
+
+.About-team {
+  display: flex;
+  position: relative;
+}
+
+.au-blacksection-container {
+  padding: 1em;
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.svg {
+  height: 40px;
+  width: 100%;
+}
+
+.none {
+  display: none;
+}
+
+.au-blacksection-container div {
+  position: sticky;
+  height: 50%;
+  flex-grow: 1;
+  padding: 5em 0;
+  display: flex;
+  align-items: flex-start;
+  transition: var(--animationSmooth);
+  flex-direction: column;
+  background-color: var(--color1);
+  border-top: 1px solid #d3d3d3bd;
+  top: 1em !important;
+  left: 0;
+}
+
+.expand-button {
+  background-color: black;
+  height: 50px;
+  width: 50px;
+  color: white;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  transition: var(--animationSmooth);
+  box-shadow: var(--box-shadow);
+}
+
+.expand-button:hover {
+  opacity: 0.8;
+}
+
+.About-section {
+  min-height: 100vh;
+  padding: 2em 4em;
+  width: 75%;
+  max-width: 1250px;
+  background-color: white;
+  transition: all 500ms ease;
+  box-shadow: -8px 0 30px rgba(26, 26, 26, 0.767),
+    -10px 0 20px rgba(88, 88, 88, 0.3), 0px 0 20px rgba(255, 255, 255, 0.2);
+}
+
+.About-section.expanded {
+  background-color: white;
+  min-width: 100%;
+  max-width: 100%;
+  height: 100%;
+  z-index: 9;
+}
+
+.aboutus-headtext {
+  padding: 2em 0;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+  max-width: 1000px;
+  min-height: 100%;
+  margin: 0 auto;
+  transition: var(--animationSmooth);
+}
+
+.grid-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+  min-height: 100%;
+  border-radius: 9px;
+  transition: all 400ms ease;
+}
+
+.grid-item-tag {
+  background-color: var(--color1);
+  text-transform: capitalize;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.123);
+  font-size: 13px;
+  position: absolute;
+  z-index: 3;
+  left: 18px;
+  bottom: 30px;
+  height: 3em;
+}
+
+.grid-item .team-image {
+  position: relative;
+  object-fit: cover;
+  overflow: hidden;
+  transition: all 400ms ease;
+}
+
+.team-image img {
+  border-radius: 5px;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.grid-item-link {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.animateLink {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.col-content h3 {
+  margin: 0 !important;
+}
+
+.col-content p {
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 650px) {
+  .About-team {
+    display: block;
+  }
+  .au-blacksection {
+    max-width: 100%;
+    width: 100%;
+  }
+  .au-hero-text {
+    top: 1em;
+    bottom: auto;
+    left: 15px;
+    height: fit-content;
+    display: block;
+  }
+}

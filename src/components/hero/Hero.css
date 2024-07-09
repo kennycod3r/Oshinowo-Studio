@@ -1,0 +1,165 @@
+@import "react-slideshow-image/dist/styles.css";
+
+.hero-container {
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide-container {
+  width: 100%;
+  min-height: 100%;
+  height: 100%;
+}
+
+.hero-slide {
+  justify-content: center;
+  height: 100vh;
+  height: 100%;
+}
+
+.hero-img-div {
+  width: 100%;
+  height: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.hero-caption {
+  display: flex;
+  margin-top: 40px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 20px;
+}
+
+.hero-headtextt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  font-weight: bold;
+}
+
+.arrowdiv {
+  width: 30px;
+  height: 30px;
+  margin-top: 20px;
+}
+
+.hero-headtextt h1 {
+  font-size: 4em;
+  margin-top: 12px;
+  letter-spacing: -2px;
+}
+
+.oshin-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  line-height: 1.4;
+  font-weight: 400;
+  width: 400px;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+.oshin-container p {
+  font-size: 1.44em;
+  color: white;
+  text-align: left;
+  text-transform: capitalize;
+}
+.smallp,
+.smallestp {
+  font-size: 15px;
+  text-align: left;
+  line-height: 1.4;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.smallestp {
+  font-size: 14px;
+}
+
+.view-hero-header {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  overflow: hidden;
+  height: 60px;
+  justify-items: flex-start;
+}
+
+.explore-text {
+  color: white;
+  padding-left: 20px;
+  font-weight: 300;
+}
+
+.view-hero-header-details {
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: left;
+  height: 100%;
+  width: 100%;
+  overflow: hidden !important;
+  align-items: center;
+  padding: 0 10px;
+  line-height: normal;
+  cursor: pointer;
+  align-content: space-around;
+  justify-items: center;
+}
+
+.view-hero-header-details p {
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.view-hero-header-details div {
+  align-items: center;
+  display: flex;
+}
+@media (max-width: 780px) {
+  .hero-container {
+    height: 70vh;
+  }
+
+  .hero-slide,
+  .hero-overlay {
+    height: 70vh;
+  }
+  .hero-img-div {
+    height: 70vh;
+  }
+  .hero-caption {
+    padding: 10px;
+  }
+  .hero-headtextt {
+    line-height: 1;
+  }
+  .hero-headtextt h1 {
+    font-size: 3.2em;
+    width: 50%;
+  }
+  .oshin-container {
+    width: 70%;
+  }
+  .oshin-container p {
+    font-size: 1em;
+    margin-left: 0;
+  }
+}

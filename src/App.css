@@ -1,0 +1,32 @@
+main,
+.doublegrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.main-grid-2 {
+  padding: 50px;
+}
+.body-link {
+  padding: 0.5em 0;
+}
+.body-link .grey-text {
+  cursor: pointer;
+  transition: var(--animationSmooth);
+}
+.body-link .grey-text:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+.grey-text {
+  color: var(--greytext);
+  margin-right: 5px;
+}
+
+@media only screen and (max-width: 850px) {
+  main,
+  .doublegrid {
+    grid-template-columns: 1fr;
+  }
+}
