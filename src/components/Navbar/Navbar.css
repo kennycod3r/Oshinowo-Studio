@@ -43,7 +43,6 @@
   text-decoration: none;
   display: flex;
   gap: 1em;
-  overflow: visible;
   transition: var(--navanimationslow);
 }
 

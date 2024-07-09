@@ -4,7 +4,7 @@ import "./Navbar.css";
 import Logo from "../Util/Logo";
 import HamburgerMenu from "../Hamburger/HamburgerMenu";
 
-const Navbar = React.memo(({ handleSidebar, openSidebar }) => {
+const Navbar = ({ handleSidebar, openSidebar }) => {
   const location = useLocation();
 
   const isHomeOrPressPage = location.pathname === "/" || location.pathname === "/Press";
@@ -23,7 +23,7 @@ const Navbar = React.memo(({ handleSidebar, openSidebar }) => {
     <nav className="static-nav" style={navbarStyle}>
       <Link to="/">
         <div className="logo-text">
-          <Logo white={isHomeOrPressPage} />
+          <Logo white={isHomeOrPressPage ? true : false} />
         </div>
       </Link>
 
@@ -47,6 +47,7 @@ const Navbar = React.memo(({ handleSidebar, openSidebar }) => {
               className="nav-link headerp name"
               style={{ color: linkStyle }}
               data-text="ContactUs"
+              
             >
               Contact Us
             </Link>
@@ -61,6 +62,6 @@ const Navbar = React.memo(({ handleSidebar, openSidebar }) => {
       </div>
     </nav>
   );
-});
+};
 
 export default Navbar;

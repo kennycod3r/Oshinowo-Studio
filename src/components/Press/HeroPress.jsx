@@ -13,13 +13,15 @@ const HeroPress = () => {
       date: "25 March 2024",
       author: "By Ijeoma Ndukwe, BBC News",
       imgSrc: newspaper1,
+      link: "https://www.bbc.com/news/world-africa-68622504"
     },
     {
       id: 2,
-      title: "What African architecture can teach the world",
-      date: "25 March 2024",
-      author: "By Ijeoma Ndukwe, BBC News",
+      title: "“The Beauty of Impermanence: An Architecture of Adaptability”",
+      date: "November 11, 2023 - March 10, 2024",
+      author: "Nick Axel",
       imgSrc: newspaper2,
+      link: "https://www.e-flux.com/criticism/579307/2nd-sharjah-architecture-triennial-the-beauty-of-impermanence-an-architecture-of-adaptability"
     },
   ];
 
@@ -36,7 +38,7 @@ const HeroPress = () => {
               <div>
                 <h4 className="headerh3">{item.title}</h4>
                 <p className="job-title smallp">{item.date}</p>
-                <p className="headerp">{item.author}</p>
+                <a href={item.link} target="_blank" rel="noopener noreferrer" className="headerp" title={item.author}>{item.author}</a>
               </div>
             </div>
             <div className="outer-image-container fC">
@@ -49,7 +51,7 @@ const HeroPress = () => {
                 <div className="overlay-base r-overlay">
                   <div className="flexCenter">
                     <ArrowLink />
-                    <span className="headerp"> view publication</span>
+                    <span className="headerp">view publication</span>
                   </div>
                 </div>
               </div>

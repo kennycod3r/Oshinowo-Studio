@@ -1,15 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Hero.css";
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 import is1 from "../../img/slide-img1.webp";
 import is2 from "../../img/slide-img3.webp";
 import is3 from "../../img/slide-img2.webp";
-import Arrow from "../assets/arrowDown.svg";
+import Arrow from "../assets/arrowDown.svg"; // Ensure the path is correct
 
-const slideImages = [{ url: is1 }, { url: is2 }, { url: "//www.oshinowostudio.com/wp-content/uploads/2023/05/Lantern-house_interior-3-scaled.jpg" }];
+const slideImages = [
+  { url: is1 },
+  { url: is2 },
+  { url: "//www.oshinowostudio.com/wp-content/uploads/2023/05/Lantern-house_interior-3-scaled.jpg" }
+];
 
 const HeroSection = () => {
+  const [slideImageIndex, setSlideImageIndex] = useState(1);
+
   return (
     <div className="hero-container fC">
       <div className="overlay-base hero-overlay">
@@ -25,13 +31,15 @@ const HeroSection = () => {
                 <span>—</span> an internationally engaged architectural design
                 studio,
               </p>
-              <p className="whiteColor headerp"> rooted in Lagos, Nigeria.</p>
+              <p className="whiteColor headerp">rooted in Lagos, Nigeria.</p>
             </div>
           </div>
         </div>
       </div>
       <div className="slide-container">
-        <Slide>
+        <Slide
+          onChange={(previous, next) => setSlideImageIndex(next + 1)}
+        >
           {slideImages.map((slideImage, index) => (
             <div key={index} className="hero-slide fC">
               <div
@@ -44,7 +52,7 @@ const HeroSection = () => {
       </div>
       <div className="view-hero-header">
         <div className="explore-text">
-          <p>01 - 04</p>
+          <p className="headerp whiteColor">0{slideImageIndex} - 04</p>
         </div>
         <div className="view-hero-header-details">
           <p>

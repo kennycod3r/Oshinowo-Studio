@@ -1,18 +1,487 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lagos Architecture | Top Architects | Oshinowo Studio</title>
+    <meta name="description" content="Oshinowo Studio, leading architects in Lagos. Discover our innovative architectural designs and projects. Contact us for top architecture services in Lagos.">
+
+    <link rel="canonical" href="https://www.oshinowostudio.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-    
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
-  </head>
-  <body>
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Oshinowo Studio | Leading Architects in Lagos">
+    <meta property="og:description" content="Explore the innovative architectural designs by Oshinowo Studio, the top architects in Lagos.">
+    <meta property="og:image" content="https://www.oshinowostudio.com/images/og-image.jpg">
+    <meta property="og:url" content="https://www.oshinowostudio.com">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Oshinowo Studio | Leading Architects in Lagos">
+    <meta name="twitter:description" content="Explore the innovative architectural designs by Oshinowo Studio, the top architects in Lagos.">
+    <meta name="twitter:image" content="https://www.oshinowostudio.com/images/twitter-image.jpg">
+
+    <!-- Schema Markup for Local Business -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ArchitecturalService",
+        "name": "Oshinowo Studio",
+        "image": "https://www.oshinowostudio.com/images/og-image.jpg",
+        "@id": "https://www.oshinowostudio.com",
+        "url": "https://www.oshinowostudio.com",
+        "telephone": "+234123456789",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "123 Lagos Street",
+          "addressLocality": "Lagos",
+          "addressRegion": "LA",
+          "postalCode": "100001",
+          "addressCountry": "NG"
+        },
+        "openingHours": "Mo,Tu,We,Th,Fr 09:00-18:00",
+        "sameAs": [
+          "https://www.facebook.com/oshinowostudio",
+          "https://www.instagram.com/oshinowostudio",
+          "https://www.linkedin.com/company/oshinowostudio"
+        ]
+      }
+    </script>
+
+    <link rel="stylesheet" href="./src/App.css" as="style" media="print" onload="this.media='all'" /> 
+    <style>
+      @font-face {
+        font-family: '"Inter", sans-serif';
+        src: url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+      }
+    </style>
+    <noscript><link rel="stylesheet" href="./src/index.css" /></noscript>
+    <link rel="stylesheet" href="./src/index.css" as="style" />
+
+    <style>
+      .preload-seo {
+        max-height: .001px;
+        z-index: -1;
+        overflow: hidden;
+      }
+    </style>
+</head>
+<body>
+  <div class="preload-seo">
+    <header>
+        <h1>Oshinowo Studio - Leading Architects in Lagos</h1>
+        <nav>
+            <ul>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h2>Innovative Architectural Designs in Lagos</h2>
+            <p>At Oshinowo Studio, we provide top-notch architectural services. Explore our projects and get in touch with us for your architecture needs.</p>
+            <img src="https://www.oshinowostudio.com/images/hero-image.jpg" alt="Oshinowo Studio - Innovative Architectural Designs" loading="lazy">
+        </section>
+
+        <section id="projects">
+            <h2>Our Projects</h2>
+            <article>
+                <h3>Adidas Flagship Store</h3>
+                <p>Location: Lagos, Nigeria | Year: 2023</p>
+                <img src="https://www.oshinowostudio.com/images/adidas-flagship-store.jpg" alt="Adidas Flagship Store by Oshinowo Studio" loading="lazy">
+            </article>
+            <!-- More projects -->
+        </section>
+
+        <section id="about">
+            <h2>About Oshinowo Studio</h2>
+            <p>Oshinowo Studio is a leading architectural firm in Lagos, specializing in commercial, residential, and creative projects.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Email: info@oshinowostudio.com | Phone: +234123456789</p>
+            <address>
+                123 Lagos Street, Lagos, Nigeria
+            </address>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Oshinowo Studio. All rights reserved.</p>
+    </footer>
+  </div>
+  <style>
+    :root {
+  --gap: clamp(1em, 4vw, 2.5em);
+  --paddingMain:4em 1em;
+  --columns: 3;
+  --border-line: 0.1px solid rgb(203, 203, 203);
+  --greycolor: #646464;
+  --color1: #141517;
+  --color2: #f1f1f1;
+  --cubic: cubic-bezier(0.3, 1, 0.3, 1);
+  --color3: #e34248;
+  --box-shadow: 0 0 10px #52525235;
+  --box-shadow-main: 0 25px 16px 0 hsla(0, 0%, 0%, 0.05),
+    0 10px 10px 0 hsla(0, 0%, 0%, 0.1), 0 3px 6px 0 hsla(0, 0%, 0%, 0.1);
+  --background-grey: #e6e6e6;
+  --animationSmooth: all 200ms ease-out;
+  --navanimationslow: all 0.5s cubic-bezier(0.7, 0, 0.1, 1);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.sB{
+  align-items: center;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.flexPage {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  align-content: stretch;
+  justify-content: space-evenly;
+  align-items: stretch;
+  min-width: 100%;
+}
+.dash {
+  margin-right: 7px;
+}
+.pointer{
+  position: relative;
+  transition: var(--animationSmooth);
+}
+.pointer::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  min-width: 100%;
+  height: 1px;
+  background-color: rgb(255, 255, 255);
+  transform: scaleX(0);
+  transition: var(--navanimationslow);
+}
+
+.pointer:hover::after {
+  transform: scaleX(7);
+}
+
+.pointer:hover{
+  color:  white;
+}
+
+.press-hero-img{
+  min-height: 100%;
+  background-image: url("https://www.oshinowostudio.com/wp-content/uploads/2024/05/Tosin-Oshinowo-portrait-4-photo-by-Spark-Creative-2048x1352.png") !important;
+}
+.overlay-base {
+  color: white;
+  background: rgba(0, 0, 0, 0.182);
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.8s cubic-bezier(0.3, 1, 0.3, 1);
+}
+
+.hero2-overlay {
+  text-align: center;
+  opacity: 1;
+  will-change: opacity;
+}
+.pressHeroOverlay {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.3);
+  min-height: 100%;
+}
+.whiteColor {
+  color: white;
+}
+.r-overlay {
+  text-align: center;
+  justify-content: center;
+  opacity: 0;
+  will-change: opacity;
+}
+
+.link-copy__icon {
+  height: 10px;
+  width: 10px;
+  color: #aeaeae;
+  z-index: 10;
+  margin-right: 8px;
+}
+
+.link-copy__icon svg {
+  height: 10px;
+  width: 10px;
+}
+
+#error-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+
+b {
+  color: var(--color3);
+}
+.errorclose {
+  background-color: var(--color3);
+  border-radius: 50%;
+  height: 40px;
+  padding: 10px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tac {
+  text-align: center;
+}
+.tar {
+  text-align: right;
+}
+.fC {
+  display: flex;
+  align-items: center;
+}
+
+html {
+  scrollbar-width: none;
+}
+
+body {
+  line-height: 2.3em;
+  color: var(--color1);
+  min-height: fit-content;
+  min-height: 100vh;
+  height: 100%;
+  font-optical-sizing: auto;
+  transition: var(--animationSmooth);
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  font-size: clamp(16px, 1.2vw, 19px);
+  font-family: "Inter", sans-serif !important;
+  font-optical-sizing: auto;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+.headerh1,
+.headerh2,
+.headerh3,
+.headerp {
+  font-size: 1.6em;
+  letter-spacing: -1.5px;
+  font-weight: 400;
+}
+
+.headerp,
+.number {
+  font-size: 16px;
+  letter-spacing: -0.8px;
+}
+
+.number {
+  color: var(--greycolor);
+  font-weight: bolder;
+}
+.headerh2 {
+  font-size: 1.4em;
+}
+.headerh3,
+.subtitle,
+.name {
+  font-size: 1.3em;
+  letter-spacing: -0.9px;
+  line-height: 1.4;
+  font-weight: 400;
+}
+.headerh3 {
+  margin: 10px 0;
+}
+
+.job-title,
+label {
+  font-size: 13px;
+  color: #5b5b5b;
+  margin: 5px 0;
+  line-height: 1.2;
+}
+label {
+  color: white;
+  font-weight: 400;
+}
+.Headerh3 {
+  font-size: 1.6em;
+  letter-spacing: -1.5px;
+  font-weight: 400;
+}
+
+.name {
+  font-weight: 600;
+  font-size: medium;
+  letter-spacing: -0.6px;
+}
+.headerh4 {
+  font-size: 1em;
+}
+
+.light-grey {
+  color: rgb(125, 125, 125);
+}
+
+.body-section {
+  position: relative;
+}
+.animateLink {
+  transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  will-change: transform;
+  transform: rotate(0deg);
+}
+
+h1 {
+  font-size: 2.986rem;
+}
+
+p {
+  font-size: 15px;
+  text-align: left;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1em;
+  color: var(--color1);
+  line-height: 1.66;
+}
+
+.flexCenter {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+
+.flexSb {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+i {
+  font-family: "Times New Roman", Times, serif;
+}
+.common-btn-style {
+  border-radius: 100em;
+  padding: 0 0.95em 0.05em 0.95em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  gap: 0.25em;
+  border: none;
+  font-family: inherit;
+  outline: none;
+  height: 2.7em;
+  color: aliceblue !important;
+  cursor: pointer;
+}
+@keyframes animateArrow {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(45deg);
+  }
+}
+
+.white-dot {
+  color: transparent !important;
+}
+
+@keyframes animateNav {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .showmobile {
+    display: none;
+  }
+  .hidemobile {
+    display: none;
+  }
+  .hero2-overlay {
+    align-items: flex-end;
+    padding: 5px;
+    margin: 0;
+  }
+  .pressHeroOverlay {
+    justify-content: space-between;
+    padding: 0 1em;
+  }
+  .pressHeroOverlay .hero-headtextt h1 {
+    padding: 0 !important;
+    margin: 0;
+  }
+
+  .pressHeroOverlay .author-box {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+  }
+  .pressHeroOverlay button {
+    margin-top: 2px;
+  }
+}
+
+  </style>
     <div id="root"></div>
     <div id="sideBar"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+    <script type="module"  defer  src="/src/main.jsx"></script>
+</body>
 </html>

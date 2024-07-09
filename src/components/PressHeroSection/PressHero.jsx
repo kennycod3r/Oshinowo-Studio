@@ -1,6 +1,5 @@
 import React from "react";
 import TinyDiv from "../Util/tinyDiv/TinyDiv";
-import Arrow from "../assets/arrowDown.svg";
 import award from '../../img/award.webp';
 
 const PressHero = () => {
@@ -16,7 +15,7 @@ const PressHero = () => {
                 <span>—</span> Oshinowo Studio
               </h1>
             </div>
-            <div className="flex cream-card-container small-btn-container">
+            <div className=" cream-card-container small-btn-container">
               <button className=" common-btn-style cream-btn phb">
                 View All Publications
               </button>
