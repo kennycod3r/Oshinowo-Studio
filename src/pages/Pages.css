@@ -60,9 +60,7 @@
 .ContactPage {
   background-color: rgb(229, 224, 220);
   min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
   padding: 2em;
 }
 
@@ -99,7 +97,7 @@ textarea {
   min-width: 100%;
 }
 .devices-grid1 img {
-  object-fit: contain;
+  object-fit: cover;
 }
 .devices-grid1 {
   position: relative;
@@ -118,9 +116,10 @@ textarea {
 }
 
 .device {
-  height: 400px;
+  max-height: 400px;
   border-radius: 2em;
   cursor: pointer;
+  object-fit: cover;
 }
 
 .team-member-page-inner {
@@ -251,9 +250,19 @@ li {
     font-size: 13px;
     color: black;
   }
+
 }
 .phb {
   box-shadow: var(--box-shadow);
+}
+@media only screen and (max-width: 850px) {
+  .device, .laptop {
+    height: 100%;
+    border-radius: 2em;
+    cursor: pointer;
+    object-fit: cover;
+  }
+  
 }
 @media only screen and (max-width: 450px) {
   .row {
