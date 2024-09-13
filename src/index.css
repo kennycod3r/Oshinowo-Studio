@@ -55,7 +55,7 @@ select {
 }
 
 .greytext {
-  color: var(--greycolor);
+  color:var(--greycolor);
 }
 .flexPage {
   display: flex;
@@ -221,7 +221,7 @@ li {
 
 .headerh1,
 .headerh2,
-.headerp {
+.headerp,.sP {
   font-size: 1.6em;
   letter-spacing: -1.5px;
   font-weight: 400;
@@ -237,11 +237,14 @@ li {
 }
 
 .headerp,
-.number {
+.number, .sP {
   font-size: 16px;
   letter-spacing: -0.8px;
 }
 
+.sP{
+  line-height: 1.6;
+}
 .number {
   color: var(--greycolor);
   font-weight: bolder;

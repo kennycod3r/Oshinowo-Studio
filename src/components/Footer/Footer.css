@@ -1,3 +1,4 @@
+
 /* src/components/Footer.css */
 .Homefooter {
   position: relative;
@@ -51,6 +52,11 @@
   padding: 15px 20px;
   border: none;
   font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #a1a1a1;
+  margin-top: 10px;
 }
 
 .footer-container {
@@ -66,8 +72,6 @@
 
 .footer-col {
   padding: 10px;
-  display: grid;
-  gap: 15px;
 }
 
 .f-title {
@@ -148,14 +152,19 @@
   display: flex;
 }
 .fhs{
-  font-size: 1em;
+  line-height: 1.6;
 }
 .error {
   color: red;
 }
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 850px) {
   .Homefooter{
     padding: 2em 1em;
+  }
+  .f-grid{
+    display: grid;
+    width: 100%;
+  
   }
   .f-title {
     border: none;
@@ -167,12 +176,12 @@
     font-size: 22px;
     margin-top: 1em;
   }
-  .footer-ap {
-    margin-left: 10px;
-  }
+ 
 
   .footer-col {
     padding: 20px 10px;
+    border-top:1px solid  #373737;
+ 
   }
 
   .newsletter-div input,

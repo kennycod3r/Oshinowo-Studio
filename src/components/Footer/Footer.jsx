@@ -47,8 +47,8 @@ export default function Footer() {
 
       <div className="footer-container">
         <div className="footer--text footer-col">
-          <div>
-            <h1 className="job-title fhs">
+          <div className="f-grid">
+            <h1 className="headerh2 fhs">
               Subscribe and Receive <br />
               News And Offers!
             </h1>
@@ -71,7 +71,7 @@ export default function Footer() {
               />
               <button
                 type="submit"
-                className="submit-button fC fsb"
+                className="submit-button fsb"
                 onClick={handleSubscription}
               >
                 <p className="headerp">
@@ -89,7 +89,7 @@ export default function Footer() {
             <p className="headerp">Locate Us</p>
           </div>
           <address className="aligned-paragraphs footer-ap">
-            <p className="headerp">
+            <p className="sP">
               <span className="showmobile">Business Office</span>
               <br />
               5th Floor, CBC Tower, Olubunmi Owa Street, Off Admiralty Way,
