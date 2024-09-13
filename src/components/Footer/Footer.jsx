@@ -2,11 +2,13 @@ import React, { useState } from "react";
 import "./Footer.css";
 import ArrowLink from "../ArrowLink";
 import ArrowCircle from "../Util/arrowCircle/ArrowCircle";
-const BackToTop = React.lazy(() => import("./BackToTop"));
+import BackToTop from "./BackToTop";
 
 export default function Footer() {
   const [email, setEmail] = useState("");
-  const [subscribeMessage, setSubscribeMessage] = useState("Subscribe to our newsletter");
+  const [subscribeMessage, setSubscribeMessage] = useState(
+    "Subscribe to our newsletter"
+  );
 
   const handleEmailChange = (event) => {
     setEmail(event.target.value);
@@ -26,9 +28,8 @@ export default function Footer() {
 
   return (
     <footer className="Homefooter">
-      <React.Suspense fallback={<div>Loading...</div>}>
-        <BackToTop />
-      </React.Suspense>
+      <BackToTop />
+
       <div className="f-header showmobile">
         <div className="flex-btn-reg animateLink">
           <p>VESPERTINE</p>
@@ -41,7 +42,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="f-title">
-        <h2>INFORMATION</h2>
+        <h2 className="job-title">INFORMATION</h2>
       </div>
 
       <div className="footer-container">
@@ -52,7 +53,11 @@ export default function Footer() {
               News And Offers!
             </h1>
             <div className="newsletter-div">
-              <p className={`job-title ${subscribeMessage === "Enter a valid email" ? "error" : ""}`}>
+              <p
+                className={`job-title ${
+                  subscribeMessage === "Enter a valid email" ? "error" : ""
+                }`}
+              >
                 {subscribeMessage}
               </p>
               <input
@@ -69,7 +74,11 @@ export default function Footer() {
                 className="submit-button fC fsb"
                 onClick={handleSubscription}
               >
-                <p className="headerp">{subscribeMessage === "Subscribed!" ? "Subscribed" : "Subscribe"}</p>
+                <p className="headerp">
+                  {subscribeMessage === "Subscribed!"
+                    ? "Subscribed"
+                    : "Subscribe"}
+                </p>
                 <ArrowCircle arrow="submit" />
               </button>
             </div>
@@ -81,7 +90,8 @@ export default function Footer() {
           </div>
           <address className="aligned-paragraphs footer-ap">
             <p className="headerp">
-              <span className="showmobile">Business Office</span><br />
+              <span className="showmobile">Business Office</span>
+              <br />
               5th Floor, CBC Tower, Olubunmi Owa Street, Off Admiralty Way,
               Lekki Phase 1, Lagos.
             </p>

@@ -10,14 +10,7 @@
   box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
 }
 
-h1,
-h2 {
-  font-weight: 400;
-  font-size: 3em;
-  line-height: 1.095;
-  margin-bottom: 10px;
-  color: inherit;
-}
+
 
 .f-header,
 .flex-btn-reg-f,
@@ -29,9 +22,8 @@ h2 {
   flex-wrap: wrap; /* Ensure items wrap on smaller screens */
 }
 
-.f-header p {
-  font-size: 13px;
-}
+
+
 .flex-btn-reg{
   gap: 1em;
 }
@@ -40,44 +32,21 @@ h2 {
   padding: 10px 0;
 }
 
-
-
-.Homefooter h2 {
-  font-size: large;
-  line-height: normal;
-  letter-spacing: normal;
-}
 .Homefooter p{
   color: white;
 }
 .footer-col h1 {
-  font-size: 1.7em;
-  font-weight: 300;
-  line-height: normal;
   margin-bottom: 2em;
 }
+
 .fsb{
   max-height: 45px;
   margin-top: 1em;
   text-align: left;
 }
-input,
-textarea,
-select {
-  padding: 15px;
-  border: none;
-  outline: none;
-  width: 100%;
-  color: whitesmoke;
-  display: inline-block;
-  transition: all 100ms ease-in-out;
-}
 
-.footerInput,
-textarea,
-select {
-  background-color: #333;
-}
+
+
 .newsletter-div button {
   padding: 15px 20px;
   border: none;
@@ -128,10 +97,10 @@ select {
 }
 
 .back-to-top {
-  position: fixed;
-  bottom: 40px;
-  right: 10em;
-  z-index: 80;
+  position: absolute;
+  top: 40px;
+  right: 10px;
+  z-index: 8;
 }
 
 .back-to-top button {
@@ -150,17 +119,12 @@ select {
   font-size: 10px;
   min-width: 200px;
   cursor: pointer;
-  color: #f5f5f2;
+  color: #fff;
   min-height: 40px;
   border: none;
   text-transform: uppercase;
   outline: none;
-  will-change:auto;
   background-color: rgba(0, 0, 0, 0.822);
-  position: fixed;
-  right: 40px;
-  z-index: 9;
-  bottom: 70px;
   transition:var(--animationSmooth);
 }
 .body-section {

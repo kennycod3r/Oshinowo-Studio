@@ -40,9 +40,7 @@
   border-radius: 10px;
   display: flex;
   background-color: #1d2321;
-
 }
-
 
 .cream-card-content {
   width: 100%;
@@ -50,7 +48,7 @@
   margin-top: 4vh;
 }
 
-.cream-card-content h3{
+.cream-card-content h3 {
   padding: 0;
   margin: 0;
   line-height: 1.4;
@@ -99,8 +97,6 @@
     overflow: hidden;
   }
 
-
- 
   .cream-cardimg {
     height: 100%;
     width: 100%;
@@ -123,12 +119,12 @@
     border-radius: 10px;
   }
 
-  .cream-card-container li, .-tobooks {
+  .cream-card-container li,
+  .-tobooks {
     display: flex;
     align-items: flex-start;
     justify-content: center;
     margin-bottom: 20px;
-}
-  
-
+    border-top: var(--border-line);
+  }
 }

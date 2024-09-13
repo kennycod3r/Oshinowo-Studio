@@ -23,6 +23,30 @@
   margin: 0;
   box-sizing: border-box;
 }
+h1,
+h2 {
+  font-weight: 400;
+  font-size: 3em;
+  line-height: 1.095;
+  margin-bottom: 10px;
+  color: inherit;
+}
+input,
+textarea,
+select {
+  padding: 15px;
+  border: none;
+  outline: none;
+  width: 100%;
+  color: whitesmoke;
+  display: inline-block;
+  transition: all 100ms ease-in-out;
+}
+.footerInput,
+textarea,
+select {
+  background-color: #333;
+}
 .sB {
   align-items: center;
   width: 100%;
@@ -31,7 +55,7 @@
 }
 
 .greytext {
-  color:var(--greycolor);
+  color: var(--greycolor);
 }
 .flexPage {
   display: flex;
