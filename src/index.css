@@ -1,6 +1,6 @@
 :root {
   --gap: clamp(1em, 4vw, 2.5em);
-  --paddingMain:4em 1em;
+  --paddingMain: 4em 1em;
   --columns: 3;
   --border-line: 0.1px solid rgb(203, 203, 203);
   --greycolor: #646464;
@@ -23,11 +23,15 @@
   margin: 0;
   box-sizing: border-box;
 }
-.sB{
+.sB {
   align-items: center;
   width: 100%;
   display: flex;
   justify-content: space-between;
+}
+
+.greytext {
+  color:var(--greycolor);
 }
 .flexPage {
   display: flex;
@@ -41,11 +45,11 @@
 .dash {
   margin-right: 7px;
 }
-.pointer{
+.pointer {
   position: relative;
   transition: var(--animationSmooth);
 }
-.pointer::after{
+.pointer::after {
   content: "";
   position: absolute;
   left: 0;
@@ -62,11 +66,11 @@
   transform: scaleX(7);
 }
 
-.pointer:hover{
-  color:  white;
+.pointer:hover {
+  color: white;
 }
 
-.press-hero-img{
+.press-hero-img {
   min-height: 100%;
   background-image: url("https://www.oshinowostudio.com/wp-content/uploads/2024/05/Tosin-Oshinowo-portrait-4-photo-by-Spark-Creative-2048x1352.png") !important;
 }
@@ -200,7 +204,7 @@ li {
 }
 
 .headerh3,
-.subtitle{
+.subtitle {
   font-size: 1.3em;
   letter-spacing: -0.9px;
   line-height: 1.4;
@@ -221,7 +225,6 @@ li {
 .headerh2 {
   font-size: 1.4em;
 }
-
 
 .job-title,
 label {
@@ -338,22 +341,20 @@ p {
   font-weight: 400;
 }
 
-
 @media only screen and (max-width: 850px) {
-
   .sP {
     font-size: 14px;
     font-weight: 350;
-    letter-spacing: -.5px;
+    letter-spacing: -0.5px;
     font-style: normal;
     line-height: 1.6;
     text-transform: lowercase;
-}
-.headerh3{
-  text-transform: capitalize;
-  font-size: 16px;
-  margin: 0;
-}
+  }
+  .headerh3 {
+    text-transform: capitalize;
+    font-size: 16px;
+    margin: 0;
+  }
   .showmobile {
     display: none;
   }

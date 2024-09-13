@@ -5,8 +5,8 @@ const CreamSection = ({ data, currPage }) => {
   return (
     <section className="cream fc">
       <div className="container">
-        {!currPage ? <h2>We Are <i>Here</i> For You.</h2> : <p className="headerp">News, Articles, Publications.</p>}
-        <p className="greytext">few of our projects</p>
+        {!currPage ? <h2 className="Headerh3">We Are <i>Here</i> For You.</h2> : <p className="headerp">News, Articles, Publications.</p>}
+        <p className="greytext sP">few of our projects</p>
         <ul className="cream-card-container">
           {data.map((card, index) => (
             <li key={index}>

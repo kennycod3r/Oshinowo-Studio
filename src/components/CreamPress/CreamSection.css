@@ -1,8 +1,14 @@
 .cream {
-  background-color: #e5e0dc;
+  background: rgb(249, 249, 249);
+  background: linear-gradient(
+    180deg,
+    rgba(249, 249, 249, 1) 0%,
+    rgba(235, 235, 235, 1) 40%,
+    rgba(235, 235, 235, 1) 100%
+  );
   flex-direction: column;
   flex-wrap: wrap;
-  padding: var( --paddingMain);
+  padding: var(--paddingMain);
 }
 
 .cream-card-container {
@@ -17,13 +23,13 @@
 
 .cream-card-container li {
   min-height: 100%;
-    min-width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
-    flex-grow: 1;
-    position: relative;
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-grow: 1;
+  position: relative;
 }
 
 .cream-cardimg {
@@ -48,7 +54,7 @@
   font-size: 12px;
   background-color: #434d48ec !important;
   margin-top: 10px;
-  transition:var(--animationSmooth);
+  transition: var(--animationSmooth);
 }
 
 .ash {
@@ -62,7 +68,7 @@
 
 @media (max-width: 580px) {
   .cream {
-    padding: 4em 0;
+    padding: 4vh 20px;
     flex-direction: column;
     align-items: center;
     text-align: left;
@@ -73,13 +79,17 @@
     font-size: 13px;
   }
   .cream h2 {
-    text-align: center;
+    text-align: left;
   }
   .cream-card-container {
     grid-template-columns: 1fr;
     align-items: center;
     justify-content: center;
+    margin: 0;
+    padding: 0;
+    margin-top: 4vh;
     width: 100%;
+    gap: 1vh;
     overflow: hidden;
   }
   .cream-card-container li {
@@ -127,12 +137,5 @@
     align-items: center;
     justify-content: center;
   }
-}
-@media (max-width: 700px) {
-  .cream {
-    padding: 4em 10px;
-  }
-  .cream-card-container {
-    gap: 1.5em;
-  }
+
 }

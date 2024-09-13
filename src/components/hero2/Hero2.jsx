@@ -23,7 +23,7 @@ const Hero2 = ({ about }) => {
 
       <div className="overlay-base hero2-overlay">
         <div className="au-hero-text fC">
-          <span className="flexCenter">
+          <span className="flexCenter showmobile">
             {about ? "/" : <ArrowLink />}
             About Us.
           </span>

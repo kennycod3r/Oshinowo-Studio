@@ -51,6 +51,11 @@
   height: 100%;
 }
 
+.author-content h4{
+  color: var(--color1);
+  font-weight: 700;
+}
+
 
 
 .job-title {

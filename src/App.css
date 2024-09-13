@@ -34,7 +34,7 @@ main,
 }
 
 .grey-text {
-  color: var(--greytext);
+  color: var(--greycolor);
   margin-right: 5px;
 }
 
