@@ -11,7 +11,7 @@ const CreamSection = ({ data, currPage }) => {
           {data.map((card, index) => (
             <li key={index}>
               <div className="cream-cardimg-container">
-                <img className="cream-cardimg job-title" src={card.imgSrc} alt={card.title} />
+                <img className="cream-cardimg" src={card.imgSrc} alt={card.title} />
               </div>
               <div className="cream-card-content">
                 <h3 className="headerp name">{card.title}</h3>

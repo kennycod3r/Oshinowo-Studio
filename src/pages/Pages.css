@@ -171,8 +171,7 @@ textarea {
   z-index: 10;
   right: 0;
 }
-.qual-inner p,
-li {
+.qual-inner p{
   color: rgb(226, 226, 226);
 }
 
