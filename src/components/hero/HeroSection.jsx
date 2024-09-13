@@ -54,13 +54,13 @@ const HeroSection = () => {
           <p className="headerp whiteColor">0{slideImageIndex} - 04</p>
         </div>
         <div className="view-hero-header-details">
-          <p>
+          <p className="sP">
           Architecture <span className="hidemobile"></span>
           </p>
-          <p>
+          <p className="sP showmobile">
           Interior <span className="hidemobile">And Project Management</span>
           </p>
-          <p>Design & Build</p>
+          <p className="sP showmobile">Design & Build</p>
         </div>
       </div>
     </div>

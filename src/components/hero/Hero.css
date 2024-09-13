@@ -162,4 +162,12 @@
     font-size: 1em;
     margin-left: 0;
   }
+  .view-hero-header-details {
+    grid-template-columns: 1fr;
+  }
+  .view-hero-header-details p {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
 }

@@ -63,7 +63,7 @@ const Hero2 = ({ about }) => {
           </div>
         </div>
       </div>
-      <p className="job-title imgCopyrigt">oshinowostudio Lagos, Nigeria®.</p>
+      <p className="job-title imgCopyrigt sP">oshinowostudio Lagos, Nigeria®.</p>
     </div>
   );
 };

@@ -13,7 +13,7 @@ const HeroPress = () => {
       date: "25 March 2024",
       author: "By Ijeoma Ndukwe, BBC News",
       imgSrc: newspaper1,
-      link: "https://www.bbc.com/news/world-africa-68622504"
+      link: "https://www.bbc.com/news/world-africa-68622504",
     },
     {
       id: 2,
@@ -21,24 +21,35 @@ const HeroPress = () => {
       date: "November 11, 2023 - March 10, 2024",
       author: "Nick Axel",
       imgSrc: newspaper2,
-      link: "https://www.e-flux.com/criticism/579307/2nd-sharjah-architecture-triennial-the-beauty-of-impermanence-an-architecture-of-adaptability"
+      link: "https://www.e-flux.com/criticism/579307/2nd-sharjah-architecture-triennial-the-beauty-of-impermanence-an-architecture-of-adaptability",
     },
   ];
 
   return (
     <div className="press-page">
       <h3 className="Headerh3">Press</h3>
+      <p className="sP greytext">Publications And Recent Articles</p>
       <section className="doublegrid press-doublegrid">
         {pressData.map((item, index) => (
           <div key={item.id} className="doublegrid text-container">
             <div className="news-description">
-              <span className="number">
+              <span className="number showmobile">
                 {String(index + 1).padStart(2, "0")}
               </span>
-              <div>
+              <div className="news-stuff">
                 <h4 className="headerh3">{item.title}</h4>
-                <p className="job-title smallp">{item.date}</p>
-                <a href={item.link} target="_blank" rel="noopener noreferrer" className="headerp" title={item.author}>{item.author}</a>
+                <div className="date-author">
+                  <p className="job-title sP">{item.date}</p>
+                  <a
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="headerp"
+                    title={item.author}
+                  >
+                    {item.author}
+                  </a>
+                </div>
               </div>
             </div>
             <div className="outer-image-container fC">

@@ -16,7 +16,7 @@ const Aublacksection = ({ expand }) => {
           <span>
             <img className="svg" src={Pen} alt="Pencil icon" />
           </span>
-          <p className={expand ? "none" : ""}>
+          <p className={`sP ${expand ? "none" : ""}`}>
             As architects, we are passionate about the role of design to improve
             the quality of life. We design places for all of life’s activities.
             So far, we have been able to demonstrate through our projects an
@@ -28,7 +28,7 @@ const Aublacksection = ({ expand }) => {
           <span>
             <img className="svg" src={Pen} alt="Pencil icon" />
           </span>
-          <p className={expand ? "none" : ""}>
+          <p className={`sP ${expand ? "none" : ""}`}>
             As interior architects, we see each client and project as a unique
             challenge to us and we ensure the resulting environments are
             exceptional and appropriate. Our objective is to deliver projects
@@ -40,7 +40,7 @@ const Aublacksection = ({ expand }) => {
           <span>
             <img className="svg" src={Pen} alt="Pencil icon" />
           </span>
-          <p className={expand ? "none" : ""}>
+          <p className={`sP ${expand ? "none" : ""}`}>
             We see design and build as a creative discipline. We don’t
             copy/paste; our solutions are developed through a continual process
             of questioning. By doing so we protect ourselves from complacency
@@ -52,7 +52,7 @@ const Aublacksection = ({ expand }) => {
           <span>
             <img className="svg" src={crane} alt="Crane icon" />
           </span>
-          <p className={expand ? "none" : ""}>
+          <p className={`sP ${expand ? "none" : ""}`}>
             We bring visionary places, spaces, and ideas to life. Because
             without context, vision is just a dream. We love to give shape,
             context, and reality to the most inspiring projects.
@@ -63,7 +63,7 @@ const Aublacksection = ({ expand }) => {
           <span>
             <img className="svg" src={digger} alt="Digger icon" />
           </span>
-          <p className={expand ? "none" : ""}>
+          <p className={`sP ${expand ? "none" : ""}`}>
             We are proactive in anticipating and solving challenges. We look to
             apply technology to refine design, increase efficiency, and improve
             buildability. So if you have your design thought out and need a team

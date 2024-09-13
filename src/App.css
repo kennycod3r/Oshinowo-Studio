@@ -74,7 +74,6 @@ main,
 .BLACKNAV {
   gap: 10px;
   width: 100%;
-  
   font-size: 12px;
   text-transform: capitalize;
 }
@@ -99,8 +98,12 @@ main,
     grid-template-columns: 1fr;
   }
 .blackNav-wrapper {
-  max-width: 100%;
-  
+  max-width: 90%;
+  margin: 0 auto;
+  height: auto;
+  padding: 20px;
+  font-size: 10px;
+  gap: 6px;
 }
 }
 
@@ -109,4 +112,5 @@ main,
   .doublegrid {
     grid-template-columns: 1fr;
   }
+
 }

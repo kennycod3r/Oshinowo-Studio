@@ -4,10 +4,10 @@ import ArrowLink from "../ArrowLink";
 
 const BodyLink = ({navLink, linkText}) => {
   return (
-    <div className="load-more body-link">
+    <div className="body-link">
       <Link className="flexCenter" to={navLink}>
         <ArrowLink black={"black"} />
-        <p className="headerp grey-text">{linkText}</p>
+        <p className="headerp grey-text">{linkText} ?</p>
       </Link>
     </div>
   );

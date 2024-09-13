@@ -52,7 +52,7 @@ const Main = () => {
       <main className="main-card">
         <div className="white-dot">.</div>
         <div className="main-grid-2">
-          <article className="smallp">
+          <article className="sP">
             An Architectural Firm with a diverse international portfolio
             features individual homes, pavilions, commercial and cultural
             spaces, community housing, and large-scale humanitarian projects. We
@@ -92,7 +92,7 @@ const Main = () => {
               stroke-linejoin="round"
             ></path>
           </svg>
-          <span>
+          <span className="sP">
             5th Floor, CBC Tower, Olubunmi Owa Street, Off Admiralty Way, Lekki
             Phase 1, Lagos.
           </span>

@@ -30,7 +30,7 @@ const Wwd = () => {
         </div>
         <div ref={ref3} className={`wwd-textbox ${inView3 ? "visible" : ""}`}>
           <h2 className="headerh2">Architecture</h2>
-          <p>
+          <p className="sP">
             As architects, we are passionate about the role of design to improve
             the quality of life. We design places for all of life's activities.
             So far, we have been able to demonstrate through our projects an
@@ -41,7 +41,7 @@ const Wwd = () => {
       <div className="doublegrid wwd-textbox-small">
         <div ref={ref4} className={`fI1 ${inView4 ? "visible" : ""}`}>
           <p className="headerh3 fI1-header">Interior Architecture</p>
-          <p>
+          <p className="sP">
             As interior architects, we see each client and project as a unique
             challenge to us and we ensure the resulting environments are
             exceptional and appropriate. Our objective is to deliver projects
@@ -50,7 +50,7 @@ const Wwd = () => {
         </div>
         <div ref={ref5} className={`fI1 ${inView5 ? "visible" : ""}`}>
           <p className="headerh3 fI1-header">Design & Build</p>
-          <p>
+          <p className="sP">
             We see design and build as a creative discipline. We don't
             copy/paste; our solutions are developed through a continual process
             of questioning. By doing so we protect ourselves from complacency
