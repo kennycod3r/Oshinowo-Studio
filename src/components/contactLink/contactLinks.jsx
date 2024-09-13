@@ -13,6 +13,7 @@ const ContactColumn = ({ items }) => (
 const ContactItem = ({ icon, text, link }) => (
   <li className="red">
     {link ? (
+      
       <a className="" href={link}>
         <div className=" job-title">{icon}</div>
         <span className="headerp name">{text}</span>

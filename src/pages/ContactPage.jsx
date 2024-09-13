@@ -55,7 +55,7 @@ const ContactPage = () => {
                   />
                 </div>
                 <div className="form-group">
-                  <label htmlFor="clientEmail">Email</label>
+                  <label htmlFor="clientEmail">Email<span className="orangeColor">*</span></label>
                   <input
                     type="email"
                     id="clientEmail"

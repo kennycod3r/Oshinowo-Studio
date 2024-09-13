@@ -1,11 +1,25 @@
+.threeD-houses-section {
+  padding: 5vh 0;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 4vh;
+}
+
 main,
 .doublegrid {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+.main-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 
 .main-grid-2 {
   padding: 50px;
+  box-shadow: var(--box-shadow);
+  background-color: #fff;
 }
 .body-link {
   padding: 0.5em 0;
@@ -22,6 +36,72 @@ main,
 .grey-text {
   color: var(--greytext);
   margin-right: 5px;
+}
+
+.housebg {
+  object-fit: cover;
+  width: 100%;
+}
+.threeD-houses-section {
+  padding: 5vh 0;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 4vh;
+}
+
+.housebg {
+  object-fit: cover;
+  width: 100%;
+}
+
+.blackNav-wrapper {
+  max-width: 50%;
+  height: 7vh;
+  border-radius: 5px;
+  overflow: hidden;
+  right: 0;
+  bottom: 1em;
+  color: #fff;
+  display: flex;
+  padding: 0 1em;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: calc(4 / var(14) * 1rem);
+  background-color: var(--color1);
+  transition: border-radius 0.3s cubic-bezier(0.4, 0.4, 0.1, 1);
+}
+
+.BLACKNAV {
+  gap: 10px;
+  width: 100%;
+  
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
+.BLACKNAV li{
+  padding: 0 10px;
+  font-size: 10px;
+  background-color: black;
+}
+
+.bnLocation{
+  color: #fff;
+  font-size: 12px;
+  gap: 10px;
+ 
+
+}
+
+@media only screen and (max-width: 850px) {
+  main,
+  .doublegrid {
+    grid-template-columns: 1fr;
+  }
+.blackNav-wrapper {
+  max-width: 100%;
+  
+}
 }
 
 @media only screen and (max-width: 850px) {

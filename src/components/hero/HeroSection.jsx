@@ -55,12 +55,12 @@ const HeroSection = () => {
         </div>
         <div className="view-hero-header-details">
           <p>
-            CALL <span className="hidemobile">FOR AIRPORT PICKUP</span>
+          Architecture <span className="hidemobile"></span>
           </p>
           <p>
-            BUSINESS <span className="hidemobile">OR PROJECT PLANNING</span>
+          Interior <span className="hidemobile">And Project Management</span>
           </p>
-          <p>SERVICES</p>
+          <p>Design & Build</p>
         </div>
       </div>
     </div>

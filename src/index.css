@@ -213,14 +213,7 @@ li {
 .headerh2 {
   font-size: 1.4em;
 }
-.headerh3,
-.subtitle,
-.name {
-  font-size: 1.3em;
-  letter-spacing: -0.9px;
-  line-height: 1.4;
-  font-weight: 400;
-}
+
 .headerh3 {
   margin: 10px 0;
 }
@@ -242,10 +235,12 @@ label {
   font-weight: 400;
 }
 
-.name {
-  font-weight: 600;
-  font-size: medium;
-  letter-spacing: -0.6px;
+.mP {
+  font-weight: 400;
+  font-style: normal;
+  font-size: clamp(1.55em, 2.3vw, 2.5em);
+  line-height: 1;
+  letter-spacing: -1.5px;
 }
 .headerh4 {
   font-size: 1em;
@@ -329,8 +324,26 @@ i {
     transform: translateY(100%);
   }
 }
+p {
+  overflow-wrap: break-word;
+  font-size: unset;
+  font-weight: unset;
+}
+
+.sP {
+  font-size: 16px;
+  font-weight: 400;
+}
+
 
 @media only screen and (max-width: 850px) {
+
+  .sP {
+    font-size: 14px;
+    font-weight: 350;
+    letter-spacing: -0.5px;
+    font-style: normal;
+  }
   .showmobile {
     display: none;
   }
