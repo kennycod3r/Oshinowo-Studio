@@ -13,15 +13,15 @@
     imageUrl:
       "https://www.oshinowostudio.com/wp-content/uploads/2024/02/OBIAMAKA-OFODILE-Oshinowo-Studio-1.png",
     tags: ["Architect"],
-    link: "https://avvr.nl/ARCHITECT/dennis-reijnders",
+    link: "2",
   },
   {
-    name: "Diederick van Dalen",
+    name: "Nnamdi Opara",
     role: "Architect",
     imageUrl:
       "https://www.oshinowostudio.com/wp-content/uploads/2024/02/NNAMDI-OPARA-Oshinowo-Studio-1.png",
     tags: ["Architect"],
-    link: "https://avvr.nl/ARCHITECT/diederick-van-dalen",
+    
   },
   {
     name: "Olabode Toyo",
@@ -29,7 +29,7 @@
     imageUrl:
       "https://www.oshinowostudio.com/wp-content/uploads/2024/02/OLABODE-TOYO-Oshinowo-Studio.png",
     tags: ["Architect"],
-    link: "https://avvr.nl/ARCHITECT/harke-plas",
+    
   },
   {
     name: "Nkem Morah",
@@ -37,7 +37,7 @@
     imageUrl:
       "https://www.oshinowostudio.com/wp-content/uploads/2024/02/NKEM-MORAH-Oshinowo-Studio-1.png",
     tags: ["Architect"],
-    link: "https://avvr.nl/ARCHITECT/janjacob-bijkerk",
+   
   },
   {
     name: "Caleb Iwayemi",
@@ -109,7 +109,6 @@
     tags: ["ARCHITECT"],
     link: "https://www.oshinowostudio.com/ARCHITECT/adewale-adegunle",
   },
-  // Add other ARCHITECTs...
 ];
 
 export default ARCHITECTMembers

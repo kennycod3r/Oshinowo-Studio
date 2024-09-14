@@ -5,18 +5,32 @@ const CreamSection = ({ data, currPage }) => {
   return (
     <section className="cream fc">
       <div className="container">
-        {!currPage ? <h2 className="Headerh3">We Are <i>Here</i> For You.</h2> : <p className="headerp">News, Articles, Publications.</p>}
+        {!currPage ? (
+          <h2 className="Headerh3">
+            We Are <i>Here</i> For You.
+          </h2>
+        ) : (
+          <p className="headerp">News, Articles, Publications.</p>
+        )}
         <p className="greytext sP">few of our projects</p>
         <ul className="cream-card-container">
           {data.map((card, index) => (
             <li key={index}>
               <div className="cream-cardimg-container">
-                <img className="cream-cardimg" src={card.imgSrc} alt={card.title} />
+                <img
+                  className="cream-cardimg"
+                  src={card.imgSrc}
+                  alt={card.title}
+                  loading="lazy"
+                  height="340"
+                />
               </div>
               <div className="cream-card-content">
                 <h3 className="headerp name">{card.title}</h3>
                 <div className="flexSb">
-                  <p className="job-title">{card.date ? card.date : card.location}</p>
+                  <p className="job-title">
+                    {card.date ? card.date : card.location}
+                  </p>
                 </div>
                 <div className="flex small-btn-container">
                   <button className="common-btn-style cream-btn small-btn">

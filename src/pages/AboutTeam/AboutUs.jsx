@@ -34,10 +34,10 @@ const AboutUs = () => {
             <div className="hero-headtextt">
               <p className="headerp">Our expert team at</p>
               <h1 className="headerh1">Oshinowo Studio</h1>
-              <p className="job-title">here to assist you.</p>
+              <p className="job-title sP">here to assist you.</p>
             </div>
             <div>
-              <p className="job-title">scroll down</p>
+              <p className="job-title sP">scroll down</p>
               <ArrowCircle />
             </div>
           </div>

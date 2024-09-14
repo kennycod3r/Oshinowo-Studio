@@ -71,7 +71,6 @@ const teamMembers = [
     tags: ["Property"],
     link: "https://avvr.nl/team/lies-van-dooren",
   },
-  // Add other team members...
 ];
 
 const selectedWritings = [
@@ -141,25 +140,25 @@ const MemberQualifications = () => {
       <div className="qualification-section">
         <ul className="qual-inner" style={{ opacity: expandQual ? 1 : 0 }}>
           <li>
-            <p>Masters in Business for Architecture and Design (MBArch) IE</p>
-            <p className="job-title">University Madrid – 2021</p>
+            <p className="sP">Masters in Business for Architecture and Design (MBArch) IE</p>
+            <p className="tP">University Madrid – 2021</p>
           </li>
           <li>
-            <p> AA Postgraduate Diploma (AADipl)</p>
-            <p className="job-title"> Architecture Association London – 2007</p>
+            <p className="sP"> AA Postgraduate Diploma (AADipl)</p>
+            <p className="tP"> Architecture Association London – 2007</p>
           </li>
           <li>
-            <p>
+            <p className="sP">
               Masters of Science Urban Design in Development (MSc) Development
               Planning Unit
             </p>
-            <p className="job-title">
+            <p className="tP">
               The Bartlett University College London – 2003
             </p>
           </li>
           <li>
-            <p>Bachelors in Architecture (BSc)</p>
-            <p className="job-title">Kingston University London – 2001</p>
+            <p className="sP">Bachelors in Architecture (BSc)</p>
+            <p className="tP">Kingston University London – 2001</p>
           </li>
         </ul>
       </div>
@@ -170,9 +169,9 @@ const MemberQualifications = () => {
 const MemberDescription = ({ name, role }) => (
   <div className={`tmdes`}>
     <h1 className="headerh2">{name}</h1>
-    <p className="job-title">{role}</p>
-    <p>
-      <p>
+    <p className="tP">{role}</p>
+   
+      <p className="sP">
         Tosin Oshinowo is a Lagos-based Nigerian architect and designer renowned
         for her expansive residential and commercial spaces and insights into
         socially-responsive approaches to urbanism. Much of her work – from
@@ -185,16 +184,16 @@ const MemberDescription = ({ name, role }) => (
         prioritises equity, sustainability, and respect for nature and history
         while creating a new, more contemporary language of design.
       </p>
-    </p>
+    
   </div>
 );
 
 const MemberDetails = () => (
-  <div className=" team-member-page-inner">
+  <div className="team-member-page-inner">
     <div className={`fI1 visible tmpi`}>
       <p className="headerh3 fI1-header">Interior Architecture</p>
 
-      <p>
+      <p className="sP">
         As an architect, Oshinowo is best known as the founder and principal of
         Oshinowo Studio (formerly cmDesign Atelier), formed in 2013. Based in
         Lagos, the practice has undertaken a number of predominantly civic
@@ -209,7 +208,7 @@ const MemberDetails = () => (
     </div>
     <div className={`fI1 visible tmpi`}>
       <p className="headerh3 fI1-header">Design & Build</p>
-      <p>
+      <p className="sP">
         Before founding Oshinowo Studio, she worked in the offices of Skidmore
         Owings & Merrill in London and the Office of Metropolitan Architecture
         Rotterdam, where she was part of the team that designed the 4th Mainland
@@ -226,7 +225,9 @@ const TeamMember = () => {
   const member = teamMembers.find((member) => member.name === id);
 
   if (!member) {
-    return <div className="error">Member not found</div>;
+    return <div className="Team-error-page">
+      <p className="headerp">Member not found</p>
+    </div>;
   }
 
   return (
@@ -282,8 +283,8 @@ const ChairSection = ({ name, role }) => (
     <div className="wwd-container doublegrid team-member-page-inner">
       <div className={`tmdes`}>
         <h1 className="headerh2">{name} Ile-Ila chairs</h1>
-        <p className="job-title">{role}</p>
-        <p>
+        <p className="tP">{role}</p>
+        <p className="sP">
           As a product designer, her work primarily focuses on chair design; in
           2017, she created Ile-Ila, which means House of Lines in her native
           Yoruba language. A luxury brand, Ile-Ila chairs are made to order,

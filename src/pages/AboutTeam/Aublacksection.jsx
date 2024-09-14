@@ -1,5 +1,8 @@
 import React from "react";
 import "./AboutUs.css";
+
+import Plan from "../../components/assets/plan.svg";
+import Compas from "../../components/assets/compas.svg";
 import Pen from "../../components/assets/pencil.svg";
 import digger from "../../components/assets/digger.svg";
 import crane from "../../components/assets/crane.svg";
@@ -14,7 +17,7 @@ const Aublacksection = ({ expand }) => {
         <div>
           <p className="headerh3">Architecture</p>
           <span>
-            <img className="svg" src={Pen} alt="Pencil icon" />
+            <img className="svg" src={Plan} alt="Pencil icon" />
           </span>
           <p className={`sP ${expand ? "none" : ""}`}>
             As architects, we are passionate about the role of design to improve
@@ -38,7 +41,7 @@ const Aublacksection = ({ expand }) => {
         <div>
           <p className="headerh3">Design & Build</p>
           <span>
-            <img className="svg" src={Pen} alt="Pencil icon" />
+            <img className="svg" src={crane} alt="Pencil icon" />
           </span>
           <p className={`sP ${expand ? "none" : ""}`}>
             We see design and build as a creative discipline. We don’t
@@ -50,7 +53,7 @@ const Aublacksection = ({ expand }) => {
         <div>
           <p className="headerh3">Space Planning</p>
           <span>
-            <img className="svg" src={crane} alt="Crane icon" />
+            <img className="svg" src={Compas} alt="Crane icon" />
           </span>
           <p className={`sP ${expand ? "none" : ""}`}>
             We bring visionary places, spaces, and ideas to life. Because
