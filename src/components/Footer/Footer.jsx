@@ -35,7 +35,6 @@ export default function Footer() {
     <footer className="Homefooter">
       <BackToTop />
 
-     
       <div className="f-title">
         <h2 className="job-title">INFORMATION</h2>
       </div>
@@ -84,7 +83,7 @@ export default function Footer() {
             <p className="headerp">Locate Us</p>
           </div>
           <address className="aligned-paragraphs footer-ap">
-            <p className="sP">
+            <p className="sP greycolor2">
               <span className="showmobile">Business Office</span>
               <br />
               5th Floor, CBC Tower, Olubunmi Owa Street, Off Admiralty Way,
@@ -132,19 +131,27 @@ export default function Footer() {
       </div>
       <ul className="footer-strip">
         <li className="flexCenter headerp white">
-          <ArrowLink /> <span>Website BY @KENNYCOD3R</span>
+          <ArrowLink /> <span className="fP greycolor2">Website BY</span>
+          <span className="fP"> @KENNYCOD3R</span>
         </li>
-        <li className="flexCenter job-title">
-          <ArrowLink /> <span>© copyright' 2024</span>
+        <li className="flexCenter headerp ">
+          <ArrowLink />{" "}
+          <span className="fP greycolor2">
+            © 2024. Architects of oshinowostudio
+          </span>
         </li>
-        <li className="flexCenter job-title">
-          <ArrowLink /> <span>DEVELOPER.SOCIAL.INSTAGRAM/KENNY.LJ 2024</span>
+        <li className="flexCenter headerp">
+          <ArrowLink />{" "}
+          <span className="fP greycolor">General Terms and Conditions</span>
         </li>
-        <li className="flexCenter job-title">
-          <ArrowLink /> <span>PRIVACY POLICY</span>
+        <li className="flexCenter headerp">
+          <ArrowLink /> <span className="fP greycolor">Privacy Policy</span>
         </li>
-        <li className="flexCenter job-title">
-          <ArrowLink /> <span>TERMS AND CONDITIONS</span>
+        <li className="flexCenter headerp">
+          <ArrowLink />{" "}
+          <span className="fP greycolor">
+            Complaints procedure Legal Areas Register
+          </span>
         </li>
       </ul>
     </footer>

@@ -68,7 +68,7 @@ const Main = () => {
           </div>
         </div>
       </main>
-      <div>
+      <div className="ft-con">
         <p className="sP fancy-text">
           "Talk to someone who truly understands your vision and architectural
           needs. Make meaningful progress and feel empowered with expert
@@ -77,35 +77,36 @@ const Main = () => {
           life—all in one place."
         </p>
       </div>
-      <div className="blackNav-wrapper fC">
-        
-        <p className="fC bnLocation">
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="black"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M12 22C16 18 20 14.4183 20 10C20 5.58172 16.4183 2 12 2C7.58172 2 4 5.58172 4 10C4 14.4183 8 18 12 22Z"
-              stroke="#fff"
-              stroke-width="1.25"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            ></path>
-            <path
-              d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z"
-              stroke="#fff"
-              stroke-width="1.25"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            ></path>
-          </svg>
+      <Link to="/ContactPage">
+        <div className="blackNav-wrapper fC">
+          <div className="fC bnLocation">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="black"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 22C16 18 20 14.4183 20 10C20 5.58172 16.4183 2 12 2C7.58172 2 4 5.58172 4 10C4 14.4183 8 18 12 22Z"
+                stroke="#fff"
+                strokeWidth="1.25"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              ></path>
+              <path
+                d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z"
+                stroke="#fff"
+                strokeWidth="1.25"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              ></path>
+            </svg>
 
-          <span className="sP">locate us</span>
-        </p>
-      </div>
+            <span className="sP">locate us</span>
+          </div>
+        </div>
+      </Link>
     </section>
   );
 };

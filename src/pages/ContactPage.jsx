@@ -122,7 +122,7 @@ const ContactPage = () => {
           </div>
           <div className="devices-grid1">
             <div className="footer-title ">Locate</div>
-            <div class="profile-picture"></div>
+            <div className="profile-picture"></div>
             <ContactLinks />
           </div>
         </section>

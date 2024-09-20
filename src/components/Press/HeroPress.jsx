@@ -52,21 +52,23 @@ const HeroPress = () => {
                 </div>
               </div>
             </div>
-            <div className="outer-image-container fC">
-              <div
-                className="image-container"
-                style={{ backgroundImage: `url(${item.imgSrc})` }}
-                role="img"
-                aria-label={item.title}
-              >
-                <div className="overlay-base r-overlay">
-                  <div className="flexCenter">
-                    <ArrowLink />
-                    <span className="headerp">view publication</span>
+            <a href={item.link} target="_blank" rel="noopener noreferrer">
+              <div className="outer-image-container fC">
+                <div
+                  className="image-container"
+                  style={{ backgroundImage: `url(${item.imgSrc})` }}
+                  role="img"
+                  aria-label={item.title}
+                >
+                  <div className="overlay-base r-overlay">
+                    <div className="flexCenter">
+                      <ArrowLink />
+                      <span className="headerp">view publication</span>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
+            </a>
           </div>
         ))}
       </section>

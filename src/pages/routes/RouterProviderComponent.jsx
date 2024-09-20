@@ -1,5 +1,6 @@
 import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import ScrollToTop from "./ScrollToTop.jsx";
 import App from "../../App";
 import ErrorPage from "../Error";
 import HomePage from "../HomePage";
@@ -12,7 +13,12 @@ import TeamMember from "../TeamMember";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: (
+      <>
+        <ScrollToTop />
+        <App />
+      </>
+    ),
     errorElement: <ErrorPage />,
     children: [
       { path: "/", element: <HomePage /> },

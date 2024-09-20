@@ -7,7 +7,10 @@ import HamburgerMenu from "../Hamburger/HamburgerMenu";
 const Navbar = ({ handleSidebar, openSidebar }) => {
   const location = useLocation();
 
-  const isHomeOrPressPage = location.pathname === "/" || location.pathname === "/Press" || location.pathname === "/ContactPage";
+  const isHomeOrPressPage =
+    location.pathname === "/" ||
+    location.pathname === "/Press" ||
+    location.pathname === "/ContactPage";
 
   const navbarStyle = isHomeOrPressPage
     ? { backgroundColor: "transparent" }
@@ -30,6 +33,7 @@ const Navbar = ({ handleSidebar, openSidebar }) => {
       <div className="nav-links-with-menu flexSb">
         <ul className="nav-links showmobile fC">
           {["AboutUs", "Projects", "Press"].map((link) => (
+            
             <li className="nav-linkbox" key={link}>
               <Link
                 to={`/${link}`}
@@ -47,15 +51,13 @@ const Navbar = ({ handleSidebar, openSidebar }) => {
               className="nav-link headerp name"
               style={{ color: linkStyle }}
               data-text="ContactUs"
-              
             >
               Contact Us
             </Link>
           </li>
         </ul>
-        <div className="fixed-ham fC">
+        <div className="fixed-ham fC" onClick={handleSidebar}>
           <HamburgerMenu
-            handleSidebar={handleSidebar}
             openSidebar={openSidebar}
           />
         </div>

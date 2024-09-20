@@ -29,13 +29,14 @@
 }
 
 .nav-links {
-  gap: 30px;
+  gap: 1px;
   transition: var(--navanimationslow);
 }
 
 .nav-linkbox {
   position: relative;
   overflow: hidden;
+  
 }
 
 .nav-link {
@@ -44,6 +45,8 @@
   text-decoration: none;
   display: flex;
   gap: 1em;
+  margin-left: 10px;
+  margin-right: 10px;
   transition: var(--navanimationslow);
 }
 
@@ -81,5 +84,6 @@
   border-radius: 50%;
   height: 50px;
   width: 50px;
+  z-index: 17;
   justify-content: center;
 }

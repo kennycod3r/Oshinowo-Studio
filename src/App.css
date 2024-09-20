@@ -59,6 +59,7 @@ main,
   align-items: center;
   display: flex;
 }
+
 .bn-inner {
   grid-column-gap: 0.25rem;
   grid-row-gap: 0.25rem;
@@ -88,23 +89,24 @@ main,
   cursor: pointer;
   gap: 10px;
   color: #000;
-  letter-spacing: -0.004em;
-  border-radius: 100rem;
-  justify-content: center;
-  width: 10.5em;
-  flex-wrap: nowrap;
-  height: 3.375rem;
-  padding: 0.5rem 1.5rem;
-  font-size: 1rem;
-  font-weight: 500;
-  line-height: 1.4;
-  border: 1px solid rgba(0, 0, 0, 0.606);
-  transition: background-color 0.2s;
-  display: flex;
+  margin-top: 4vh;
+  background-color: #0000000a;
+  padding: 5px 20px;
+  border-radius: 100em;
+  border: 1px solid #dfdfdf;
+  transition: all 200ms ease;
 }
+.bnLocation:hover{
+  background-color: rgba(0, 0, 0, 0.151);
+}
+.ft-con{
+  padding: 0 1em;
+}
+
 .fancy-text {
   text-align: center;
-  margin-bottom: 4vh;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 @media only screen and (max-width: 850px) {

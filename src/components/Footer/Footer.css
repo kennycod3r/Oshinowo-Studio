@@ -120,7 +120,10 @@
 .body-section {
   position: relative;
 }
-
+.fP{
+  font-size: 12px;
+  padding-left: 2px;
+}
 .footer-strip {
   display: flex;
   align-items: center;

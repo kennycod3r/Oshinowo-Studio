@@ -114,7 +114,6 @@
   padding-bottom: 5px;
 }
 
-
 .fixed-nav-inner2 {
   display: flex;
   flex-direction: column;
@@ -131,6 +130,7 @@
   flex-wrap: wrap;
   position: relative;
 }
+
 .fixed-nav-inner2 .nav-row h5 {
   margin-bottom: 1em;
 }
@@ -175,13 +175,16 @@
   display: flex;
   flex-direction: row !important;
   width: 100%;
+
   justify-content: space-between;
 }
 .socials-list li {
   font-size: 12px;
   padding: 0 10px !important;
 }
-
+.transition {
+  transition: all 200ms ease;
+}
 @media only screen and (max-width: 650px) {
   .inner-main-sidebar {
     width: 100%;

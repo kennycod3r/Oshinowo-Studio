@@ -57,20 +57,25 @@ const Sidebar = ({ openSidebar, handleSidebar }) => {
               <ul className="socials-list">
                 {[
                   { name: "Awards", link: "https://www.awwwards.com" },
-                  { name: "Instagram", link: "https://www.instagram.com/oshinowo.studio/" },
-                  { name: "LinkedIn", link: "https://www.linkedin.com/company/oshinowo-studio/" },
+                  {
+                    name: "Instagram",
+                    link: "https://www.instagram.com/oshinowo.studio/",
+                  },
+                  {
+                    name: "LinkedIn",
+                    link: "https://www.linkedin.com/company/oshinowo-studio/",
+                  },
                 ].map((social, index) => (
-                  <li className="btn btn-link btn-link-external" key={index}>
+                  <li key={index}>
                     <a
                       href={social.link}
                       target="_blank"
                       rel="noopener noreferrer"
                       data-strength="20"
                       data-strength-text="10"
+                      className="transition"
                     >
-                      <span className="btn-text">
-                        <span className="btn-text-inner sP underline">{social.name}</span>
-                      </span>
+                      <span className=" sP ">{social.name}</span>
                     </a>
                   </li>
                 ))}

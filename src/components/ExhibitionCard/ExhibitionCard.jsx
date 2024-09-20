@@ -2,7 +2,14 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./ExhibitionCard.css";
 
-const ExhibitionCard = ({ title, location, date, imageUrl, link, cat }) => {
+const ExhibitionCard = ({ 
+  title, 
+  location, 
+  date, 
+  imageUrl, 
+  link = "#",
+  cat 
+}) => {
   return (
     <a href={link} className="ex-card-con">
       <div className="card-content">
@@ -34,8 +41,6 @@ ExhibitionCard.propTypes = {
   cat: PropTypes.string.isRequired,
 };
 
-ExhibitionCard.defaultProps = {
-  link: "#",
-};
+
 
 export default ExhibitionCard;

@@ -34,7 +34,7 @@ const PressHero = () => {
             <span className="showmobile"> - VIEW AWARD</span>
             <div className="badge">
               <TinyDiv
-                link="https://avvr.nl/team/maarten-jansen"
+                link="https://monocle.com/radio/shows/monocle-on-design/619/tosin-oshinowo/"
                 imageUrl={award}
                 name="WINNER"
                 jobTitle="Monocle Design Awards 2024."
