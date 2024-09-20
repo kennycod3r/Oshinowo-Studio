@@ -21,8 +21,10 @@ const CreamSection = ({ data, currPage }) => {
                   className="cream-cardimg"
                   src={card.imgSrc}
                   alt={card.title}
-                  loading="lazy"
+                  loading="lazy"    
+                  data-src={card.imgSrc}
                   height="340"
+                  data-ll-status="loaded"
                 />
               </div>
               <div className="cream-card-content">

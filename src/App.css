@@ -55,20 +55,20 @@ main,
 }
 
 .blackNav-wrapper {
-  max-width: 50%;
-  height: 7vh;
-  border-radius: 5px;
-  overflow: hidden;
-  right: 0;
-  bottom: 1em;
-  color: #fff;
-  display: flex;
-  padding: 0 1em;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  border-radius: calc(4 / var(14) * 1rem);
-  background-color: var(--color1);
-  transition: border-radius 0.3s cubic-bezier(0.4, 0.4, 0.1, 1);
+  display: flex;
+}
+.bn-inner {
+  grid-column-gap: 0.25rem;
+  grid-row-gap: 0.25rem;
+  border-radius: 100rem;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0.25rem;
+  display: flex;
+  position: relative;
 }
 
 .BLACKNAV {
@@ -78,18 +78,33 @@ main,
   text-transform: capitalize;
 }
 
-.BLACKNAV li{
+.BLACKNAV li {
   padding: 0 10px;
   font-size: 10px;
-  background-color: black;
+  background-color: var(--color1);
 }
 
-.bnLocation{
-  color: #fff;
-  font-size: 12px;
+.bnLocation {
+  cursor: pointer;
   gap: 10px;
- 
-
+  color: #000;
+  letter-spacing: -0.004em;
+  border-radius: 100rem;
+  justify-content: center;
+  width: 10.5em;
+  flex-wrap: nowrap;
+  height: 3.375rem;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.4;
+  border: 1px solid rgba(0, 0, 0, 0.606);
+  transition: background-color 0.2s;
+  display: flex;
+}
+.fancy-text {
+  text-align: center;
+  margin-bottom: 4vh;
 }
 
 @media only screen and (max-width: 850px) {
@@ -97,14 +112,6 @@ main,
   .doublegrid {
     grid-template-columns: 1fr;
   }
-.blackNav-wrapper {
-  max-width: 90%;
-  margin: 0 auto;
-  height: auto;
-  padding: 20px;
-  font-size: 10px;
-  gap: 6px;
-}
 }
 
 @media only screen and (max-width: 850px) {
@@ -112,5 +119,4 @@ main,
   .doublegrid {
     grid-template-columns: 1fr;
   }
-
 }

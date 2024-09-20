@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-
-import phone from "../img/phone.png";
+import "../pages/Pages.css";
+import Phone from '../img/phone.png';
+import Compas from "../components/assets/compas.svg";
 import laptop from "../img/laptop.png";
 import TinyDiv from "../components/Util/tinyDiv/TinyDiv";
 import linkdinSvg from "../components/assets/linkedin.svg";
@@ -29,21 +30,28 @@ const ContactPage = () => {
   return (
     <div className="flexPage">
       <div className="contact-press-page">
-        <section className="devices-grid cfg">
+        <section className="cfg">
           <div className="devices-grid1">
             <div className="hero-headtextt">
               <span className="headerp">Contact</span>
-              <h1 className="flexCenter">
-                <span className="dash">—</span> Let's start a project together.
-              </h1>
+              <div className="w100">
+                <h1 className="flexCenter">
+                  <span className="dash">—</span> Let's start a project
+                  together.
+                </h1>
+                <div className="flex-compass">
+                  <span className="header-c1">
+                    <img className="svg" src={Compas} alt="Crane icon" />
+                  </span>
+                </div>
+              </div>
             </div>
-            <ContactLinks />
-          </div>
-          <div className="devices-grid1">
             <div className="ser-form">
               <form className="event-form" onSubmit={handleSubmit}>
                 <div className="form-group">
-                  <label htmlFor="clientName">Name</label>
+                  <label className="label headerp" htmlFor="clientName">
+                    What's your name?
+                  </label>
                   <input
                     type="text"
                     id="clientName"
@@ -55,7 +63,9 @@ const ContactPage = () => {
                   />
                 </div>
                 <div className="form-group">
-                  <label htmlFor="clientEmail">Email<span className="orangeColor">*</span></label>
+                  <label className="label headerp" htmlFor="clientEmail">
+                    Email<span className="orangeColor">*</span>
+                  </label>
                   <input
                     type="email"
                     id="clientEmail"
@@ -67,7 +77,9 @@ const ContactPage = () => {
                   />
                 </div>
                 <div className="form-group">
-                  <label htmlFor="clientPhone">Phone Number</label>
+                  <label className="label headerp" htmlFor="clientPhone">
+                    Phone Number
+                  </label>
                   <input
                     type="tel"
                     id="clientPhone"
@@ -79,7 +91,9 @@ const ContactPage = () => {
                   />
                 </div>
                 <div className="form-group">
-                  <label htmlFor="appointmentDate">Appointment Date* (optional)</label>
+                  <label className="label headerp" htmlFor="appointmentDate">
+                    Appointment Date* (optional)
+                  </label>
                   <input
                     type="date"
                     id="appointmentDate"
@@ -88,8 +102,10 @@ const ContactPage = () => {
                     aria-label="Appointment Date"
                   />
                 </div>
-                <div className="form-group">
-                  <label htmlFor="clientMessage">Message * (optional)</label>
+                <div className="messagearea">
+                  <label className="label headerp" htmlFor="clientMessage">
+                    Message * (optional)
+                  </label>
                   <textarea
                     id="clientMessage"
                     placeholder="@Oshinowo Studios, .."
@@ -98,11 +114,16 @@ const ContactPage = () => {
                     aria-label="Client Message"
                   ></textarea>
                 </div>
-                <button type="submit" className="submit-button fC">
+                <button type="submit" className="submit-button  fC">
                   Submit <ArrowCircle arrow="submit" />
                 </button>
               </form>
             </div>
+          </div>
+          <div className="devices-grid1">
+            <div className="footer-title ">Locate</div>
+            <div class="profile-picture"></div>
+            <ContactLinks />
           </div>
         </section>
       </div>
@@ -131,10 +152,20 @@ const ContactPage = () => {
                 <img src={laptop} alt="laptop" className="laptop" />
               </div>
             </div>
-            <div className="devices-grid2">
-              <a target="_blank" href="https://www.instagram.com/oshinowo.studio/" className="dev-img-container fC">
-                <img src={phone} alt="phone" className="device" />
-              </a>
+            <div className="devices-grid1">
+              <div className="badge">
+                <TinyDiv
+                  className="au-hero-tag"
+                  target="_blank"
+                  link="https://www.linkedin.com/company/oshinowo-studio/"
+                  imageUrl={linkdinSvg}
+                  name="LinkedIn"
+                  jobTitle="Oshinowo Studio."
+                />
+              </div>
+              <div className="dev-img-container fC">
+                <img src={Phone} alt="laptop" className="laptop" />
+              </div>
             </div>
           </div>
         </div>

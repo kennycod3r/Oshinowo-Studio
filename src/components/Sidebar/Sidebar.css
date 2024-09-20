@@ -13,7 +13,7 @@
   pointer-events: none;
   will-change: opacity, transform;
 }
-#sideBar .main-sidebar{
+#sideBar .main-sidebar {
   transition: transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 .main-sidebar.open {
@@ -36,31 +36,17 @@
   transition: all 300ms ease-in-out;
   overflow: hidden;
   z-index: 99;
-  border-left: 1px solid #575757;
-  box-shadow: var(--box-shadow-light);
-  background-color: #141517;
-  border-right: 1px solid #161d15;
+  box-shadow: 10px 0 15px rgba(0, 0, 0, 0.2);
+
+  border-left: 1px solid #303030;
+  background-color: var(--color1);
+  border-right: 1px solid #202020;
 }
 
-.menu-circles{
+.menu-circles {
   position: absolute;
   top: 0;
   right: 0;
-}
-.inner-main-sidebar ul {
-  margin-top: 5.8em;
-  margin-left: 1em;
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 20px;
-  justify-content: space-evenly;
-  flex-wrap: nowrap;
-}
-
-.inner-main-sidebar ul li {
-  position: relative;
 }
 
 .close-btn-circle-sidebar {
@@ -94,7 +80,7 @@
   justify-content: center;
   gap: 10px;
   justify-content: flex-start;
-  margin: 15px 0;
+  margin: 3px 0;
   cursor: pointer;
   transition: var(--animationSmooth);
   transform: translateX(0);
@@ -128,55 +114,73 @@
   padding-bottom: 5px;
 }
 
-.semi-circle {
-  min-height: 200px;
-  border-top: 1px solid #292929;
-  overflow: hidden;
+
+.fixed-nav-inner2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  position: relative;
+  transform: translate(0px, 0px) rotate(0.001deg);
+  will-change: transform;
+  padding: 15vh 7.5vw 10vh;
+  transition: 0.6s cubic-bezier(0.7, 0, 0.2, 1);
+}
+.nav-row {
+  display: flex;
+  flex-wrap: wrap;
   position: relative;
 }
-.contact-options-wrap {
-  grid-area: Area-3;
-  margin-bottom: 0.6vw;
-  align-self: end;
-  justify-self: end;
-  overflow: hidden;
+.fixed-nav-inner2 .nav-row h5 {
+  margin-bottom: 1em;
 }
-.bottom-links {
+.theme-dark .stripe {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.stripe {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.fixed-nav-inner2 .nav-row ul {
+  margin-left: calc(var(--gap-padding) / -2);
+}
+
+.fixed-nav-inner2 .social-row {
+  margin-left: calc(clamp(1.5em, 4vw, 2.5em) / -4);
+}
+
+.fixed-nav-inner2 .nav-row ul {
+  padding-top: 5vh;
+  text-align: left;
   display: flex;
-  gap: 1em;
-  position: absolute;
-  top: 10px;
-  left: 0;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  gap: 1vh;
+}
+.fixed-nav-inner2 .nav-row ul li {
+  height: auto;
+  position: relative;
   width: 100%;
- padding-left: 2.5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 0;
 }
 
-.bottom-links div {
-  font-size: 1em;
-  position: relative; /* Position relative to contain the after element */
-  cursor: pointer;
-  color: #bdbdbd; /* Text color */
-  padding-bottom: 2px; /* Space for the underline */
-}
-
-.bottom-links div::after {
-  content: "";
-  position: absolute;
+.socials-list {
+  display: flex;
+  flex-direction: row !important;
   width: 100%;
-  height: 1px; /* Adjusted height for better visibility */
-  bottom: 0;
-  left: 0;
-  background-color: #d3d3d3; /* Underline color */
-  transform: scaleX(0);
-  transform-origin: bottom right;
-  transition: transform 0.3s ease-in-out;
+  justify-content: space-between;
 }
-
-.bottom-links div:hover::after {
-  transform: scaleX(1);
-  transform-origin: bottom left; /* Animates the underline from left to right */
+.socials-list li {
+  font-size: 12px;
+  padding: 0 10px !important;
 }
-
 
 @media only screen and (max-width: 650px) {
   .inner-main-sidebar {

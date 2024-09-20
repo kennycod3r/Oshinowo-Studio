@@ -61,13 +61,14 @@
   transition: var(--animationSmooth);
 }
 
-.ash {
-  background-color: #d0c7be !important;
-  color: black !important;
-}
 
 .common-btn-style:hover {
   background-color: #1d2321 !important;
+}
+.cream-cardimg-container{
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
 }
 
 @media (max-width: 580px) {

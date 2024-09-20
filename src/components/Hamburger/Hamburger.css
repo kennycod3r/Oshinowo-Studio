@@ -1,6 +1,5 @@
 .hamburger {
   padding: 1em;
-  background-color: antiquewhite;
   cursor: pointer;
   will-change: auto;
   overflow: hidden;

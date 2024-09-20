@@ -36,8 +36,8 @@ const PressHero = () => {
               <TinyDiv
                 link="https://avvr.nl/team/maarten-jansen"
                 imageUrl={award}
-                name="MONOCLE"
-                jobTitle="Monocle Design Awards 2024 WINNER."
+                name="WINNER"
+                jobTitle="Monocle Design Awards 2024."
               />
             </div>
           </div>

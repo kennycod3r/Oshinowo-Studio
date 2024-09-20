@@ -42,18 +42,30 @@ const AboutUs = () => {
             </div>
           </div>
           <div className="container">
-            <div className="row">
+            <ul className="row">
               {TeamData.map((member, index) => (
-                <div key={member.name} className="grid-item" id={`member-${index}`}>
-                  <Link to={`/AboutUs/${member.name}`} className="grid-item-link">
+                <li
+                  key={member.name}
+                  className="grid-item"
+                  id={`member-${index}`}
+                >
+                  <Link
+                    to={`/AboutUs/${member.name}`}
+                    className="grid-item-link"
+                  >
                     <div className="team-image">
                       <img
                         className="overlay thumbnail lazy"
                         src={member.imageUrl}
                         alt={member.name}
+                        data-src={member.imageUrl}
+                        data-ll-status="loaded"
                       />
                       {member.tags.map((tag, tagIndex) => (
-                        <div key={tagIndex} className="common-btn-style grid-item-tag">
+                        <div
+                          key={tagIndex}
+                          className="common-btn-style grid-item-tag"
+                        >
                           <span>{tag}</span>
                         </div>
                       ))}
@@ -63,9 +75,9 @@ const AboutUs = () => {
                       <p className="job-title">{member.role}</p>
                     </div>
                   </Link>
-                </div>
+                </li>
               ))}
-            </div>
+            </ul>
           </div>
         </section>
       </section>

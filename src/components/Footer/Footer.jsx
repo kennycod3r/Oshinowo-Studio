@@ -1,5 +1,10 @@
 import React, { useState } from "react";
 import "./Footer.css";
+import Compas from "../assets/compas.svg";
+import Pen from "../assets/pencil.svg";
+import digger from "../assets/digger.svg";
+import crane from "../assets/crane.svg";
+
 import ArrowLink from "../ArrowLink";
 import ArrowCircle from "../Util/arrowCircle/ArrowCircle";
 import BackToTop from "./BackToTop";
@@ -30,17 +35,7 @@ export default function Footer() {
     <footer className="Homefooter">
       <BackToTop />
 
-      <div className="f-header showmobile">
-        <div className="flex-btn-reg animateLink">
-          <p>VESPERTINE</p>
-        </div>
-        <div className="flex-btn-reg animateLink">
-          <p>Reservation Guidelines</p>
-        </div>
-        <div className="flex-btn-reg animateLink">
-          <p>© copyright' @oshinowostudio2024</p>
-        </div>
-      </div>
+     
       <div className="f-title">
         <h2 className="job-title">INFORMATION</h2>
       </div>

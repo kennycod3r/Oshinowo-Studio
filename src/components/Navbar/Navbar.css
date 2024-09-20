@@ -17,18 +17,7 @@
   height: 56px;
   padding: 0 2vw;
 }
-.promo-nav {
-  padding: 0 10px;
-  height: 2em;
-  background-color: var(--color1);
-  color: var(--color2);
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  pointer-events: all;
-  position: relative;
-  overflow: hidden;
-}
+
 .nav-links-with-menu {
   gap: 30px;
 }
@@ -87,7 +76,7 @@
 }
 
 .fixed-ham {
-  background-color: #000000c9;
+  background-color: var(--color1);
   padding: 10px;
   border-radius: 50%;
   height: 50px;

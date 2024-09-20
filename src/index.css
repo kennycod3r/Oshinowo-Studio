@@ -16,12 +16,15 @@
   --navanimationslow: all 0.5s cubic-bezier(0.7, 0, 0.1, 1);
   --bodyColor: #f1f1f1;
   --background-blend: darken;
-  --headtext: ;
+  --greycolor2: #ffffff66;
 }
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+.greycolor2 {
+  color: #ffffff66;
 }
 h1,
 h2 {
@@ -43,9 +46,8 @@ select {
   transition: all 100ms ease-in-out;
 }
 .footerInput,
-textarea,
 select {
-  background-color: #333;
+  background-color: #232323;
 }
 .sB {
   align-items: center;
@@ -55,7 +57,7 @@ select {
 }
 
 .greytext {
-  color:var(--greycolor);
+  color: var(--greycolor);
 }
 .flexPage {
   display: flex;
@@ -66,9 +68,7 @@ select {
   align-items: stretch;
   min-width: 100%;
 }
-.dash {
-  margin-right: 7px;
-}
+
 .pointer {
   position: relative;
   transition: var(--animationSmooth);
@@ -221,7 +221,8 @@ li {
 
 .headerh1,
 .headerh2,
-.headerp,.sP {
+.headerp,
+.sP {
   font-size: 1.6em;
   letter-spacing: -1.5px;
   font-weight: 400;
@@ -237,12 +238,13 @@ li {
 }
 
 .headerp,
-.number, .sP {
+.number,
+.sP {
   font-size: 16px;
   letter-spacing: -0.8px;
 }
 
-.sP{
+.sP {
   line-height: 1.6;
 }
 .number {
@@ -377,15 +379,15 @@ p {
     line-height: 1.6;
     text-transform: lowercase;
   }
-  .tP{
+  .tP {
     font-size: 12px;
     font-weight: 350;
     letter-spacing: -0.5px;
   }
-  
-.headerh1{
-  line-height: 1;
-}
+
+  .headerh1 {
+    line-height: 1;
+  }
   .headerh3 {
     text-transform: capitalize;
     font-size: 16px;

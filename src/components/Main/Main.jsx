@@ -22,7 +22,7 @@ const Main = () => {
 
     // Animate BLACKNAV (shrink and scale on scroll)
     gsap.fromTo(
-      ".blackNav-wrapper",
+      ".fancy-text",
       { scale: 0.5, opacity: 0.5 },
       {
         scale: 1,
@@ -63,18 +63,28 @@ const Main = () => {
           </article>
           <div className="body-link">
             <Link className="grey-text number" to="/AboutUs">
-              <span>Explore More </span>—ABOUT US  ↗
+              <span>Explore More </span>—ABOUT US ↗
             </Link>
           </div>
         </div>
       </main>
+      <div>
+        <p className="sP fancy-text">
+          "Talk to someone who truly understands your vision and architectural
+          needs. Make meaningful progress and feel empowered with expert
+          guidance from our team. Get professional advice and discover smarter,
+          more streamlined solutions for bringing your architectural projects to
+          life—all in one place."
+        </p>
+      </div>
       <div className="blackNav-wrapper fC">
+        
         <p className="fC bnLocation">
           <svg
             width="24"
             height="24"
             viewBox="0 0 24 24"
-            fill="none"
+            fill="black"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
@@ -92,16 +102,9 @@ const Main = () => {
               stroke-linejoin="round"
             ></path>
           </svg>
-          <span className="sP">
-            5th Floor, CBC Tower, Olubunmi Owa Street, Off Admiralty Way, Lekki
-            Phase 1, Lagos.
-          </span>
+
+          <span className="sP">locate us</span>
         </p>
-        <div className="Nav_buttons__M2zKI">
-          <ul className="fC BLACKNAV">
-            <li >contact</li>
-          </ul>
-        </div>
       </div>
     </section>
   );

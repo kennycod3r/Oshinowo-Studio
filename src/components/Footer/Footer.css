@@ -13,29 +13,14 @@
 
 
 
-.f-header,
-.flex-btn-reg-f,
-.f-header div {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  padding-bottom: 10px;
-  flex-wrap: wrap; /* Ensure items wrap on smaller screens */
-}
 
 
 
-.flex-btn-reg{
-  gap: 1em;
-}
-.flex-btn-reg-f {
-  gap: 10px;
-  padding: 10px 0;
-}
 
-.Homefooter p{
+.Homefooter{
   color: white;
 }
+
 .footer-col h1 {
   margin-bottom: 2em;
 }
@@ -126,9 +111,10 @@
   color: #fff;
   min-height: 40px;
   border: none;
+  border: 1px solid #515151;
   text-transform: uppercase;
   outline: none;
-  background-color: rgba(0, 0, 0, 0.822);
+  background-color: var(--color1);
   transition:var(--animationSmooth);
 }
 .body-section {

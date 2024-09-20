@@ -7,7 +7,7 @@ import HamburgerMenu from "../Hamburger/HamburgerMenu";
 const Navbar = ({ handleSidebar, openSidebar }) => {
   const location = useLocation();
 
-  const isHomeOrPressPage = location.pathname === "/" || location.pathname === "/Press";
+  const isHomeOrPressPage = location.pathname === "/" || location.pathname === "/Press" || location.pathname === "/ContactPage";
 
   const navbarStyle = isHomeOrPressPage
     ? { backgroundColor: "transparent" }
