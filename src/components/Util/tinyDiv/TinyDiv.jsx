@@ -15,7 +15,7 @@ const TinyDiv = ({ target = "_self", link, imageUrl, name, jobTitle, className }
         </div>
         <div className="author-content">
           <h4 className="name">{name}</h4>
-          <p className="job-title">{jobTitle}</p>
+          <div className="job-title">{jobTitle}</div>
         </div>
       </a>
     </div>

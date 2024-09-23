@@ -30,7 +30,7 @@ const CreamSection = ({ data, currPage }) => {
               <div className="cream-card-content">
                 <h3 className="headerp name">{card.title}</h3>
                 <div className="flexSb">
-                  <p className="job-title">
+                  <p className="sP job-title">
                     {card.date ? card.date : card.location}
                   </p>
                 </div>

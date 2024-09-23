@@ -21,9 +21,24 @@ const HomePage = () => {
       </div>
       <Hero2 />
       <CreamSection data={cardData} />
+      <section className="all-work">
+        <div>
+          {/* <h2 className="headerh1">Have a question, Want to work with us?</h2> */}
+        </div>
+        <h1 className="headerh2">All Discipline</h1>
+        <ul className="al-ul">
+          <li className="sP">Architecture</li>
+          <li className="sP">visual Consultancy</li>
+
+          <li className="sP">Design & Build</li>
+
+          <li className="sP">Interior Design</li>
+          <li className="sP">Landscape Architecture</li>
+          <li className="sP">Urban Design</li>
+        </ul>
+      </section>
     </div>
   );
 };
 
 export default React.memo(HomePage);
-

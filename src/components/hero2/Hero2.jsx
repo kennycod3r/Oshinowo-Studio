@@ -47,7 +47,7 @@ const Hero2 = ({ about }) => {
                   <img className="star" src={star} alt="Star rating" />
                   <img className="star" src={star} alt="Star rating" />
                   <img className="star" src={star} alt="Star rating" />
-                  <p className="job-title number">4.9/5</p>
+                  <span className="job-title number">4.9/5</span>
                 </div>
               }
             />
